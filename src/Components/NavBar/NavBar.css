@@ -5,7 +5,10 @@
 .flex {
   display: flex;
   justify-content: space-between;
-
+  margin: 0px;
+  height: 50px;
+  align-items: center;
+  width: 90%;
 }
 
 .flex > li {

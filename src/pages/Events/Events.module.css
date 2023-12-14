@@ -1,0 +1,30 @@
+.heroSection {
+  background-color: black;
+  color: white;
+  height: 200px;
+}
+
+.heroSection h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.eventsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.eventCard {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: beige;
+}
+
+.eventCard > p, .eventCard > h3 {
+  text-align: center;
+}

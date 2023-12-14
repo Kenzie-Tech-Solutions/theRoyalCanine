@@ -1,15 +1,19 @@
 import { NavBar } from "../../Components/NavBar/NavBar";
-import style from "./faqBusinessDetails.module.css";
+import styles from "./faqBusinessDetails.module.css";
+import { FaqAccordion } from "../../Components/faqAccordion/faqAcordion";
+import { faqArray } from "../../faqArray";
 
 export const FaqBusinessDetails = () => {
   return (
     <div>
-      <div className={style.heroSection}>
+      <div className={styles.heroSection}>
         <NavBar />
-        <h1>Business Details & FAQ</h1>
+        <div className={styles.pageHeader}>
+          <h1>Business Details & FAQ</h1>
+        </div>
       </div>
 
-      <div className="business-details">
+      <div className={styles.businessDetails}>
         <h2>business details </h2>
         <ul>
           <li>business hours</li>
@@ -22,31 +26,16 @@ export const FaqBusinessDetails = () => {
           itaque dolores, rem totam accusantium beatae explicabo quos quod!
         </p>
       </div>
-      <div className="faq-section">
+      <div className={styles.faqSection}>
         <h2>FAQ</h2>
-        <div>
-          <h3>question 1</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            eligendi enim magni nesciunt atque nam nemo natus unde ea quis, quae
-            itaque dolores, rem totam accusantium beatae explicabo quos quod!
-          </p>
-        </div>
-        <div>
-          <h3>question 2</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            eligendi enim magni nesciunt atque nam nemo natus unde ea quis, quae
-            itaque dolores, rem totam accusantium beatae explicabo quos quod!
-          </p>
-        </div>
-        <div>
-          <h3>question 3</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            eligendi enim magni nesciunt atque nam nemo natus unde ea quis, quae
-            itaque dolores, rem totam accusantium beatae explicabo quos quod!
-          </p>
+        <div className={styles.faqQuestionWrapper}>
+          {faqArray.map((faq) => (
+            <FaqAccordion
+              id={faq.id}
+              question={faq.question}
+              answer={faq.answer}
+            />
+          ))}
         </div>
       </div>
     </div>
