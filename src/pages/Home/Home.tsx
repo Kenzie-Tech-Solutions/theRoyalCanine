@@ -1,16 +1,16 @@
 import { NavBar } from "../../Components/NavBar/NavBar";
-import "./Home.css";
+import style from "./Home.module.css";
 
 export const Home = () => {
   return (
     <div>
-      <div className="hero-section">
+      <div className={style.heroSection}>
         <NavBar />
         <img src="https://picsum.photos/id/237/200/300" alt="dog" />
         <h1>The Royal Canine</h1>
       </div>
-      <div>
-        <h2>basic info</h2>
+      <div className={style.basicInfoSection}>
+        <h2>Heading</h2>
         <ul>
           <li>business hours</li>
           <li>location</li>
@@ -31,7 +31,7 @@ export const Home = () => {
           Lorem ipsum dolor sit amet
         </p>
       </div>
-      <div>
+      <div className={style.contactInfo}>
         <h2>contact info</h2>
         <div>
           <form action="link-to-get-form.io">

@@ -1,0 +1,8 @@
+.heroSection {
+  background-color: black;
+  height: 300px;
+}
+
+.heroSection > h1 {
+  color: white;
+}

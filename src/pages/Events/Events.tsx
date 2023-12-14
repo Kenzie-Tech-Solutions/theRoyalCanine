@@ -9,7 +9,7 @@ export const Events = () => {
       <div>
         {eventDetails.map((event) => {
           return (
-            <div>
+            <div key={event.date}>
               <p>{event.date}</p>
               <h3>{event.title}</h3>
               <p>{event.details}</p>
