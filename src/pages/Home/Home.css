@@ -1,0 +1,18 @@
+.hero-section {
+  background-color: black;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section > img {
+  width: 300px;
+  align-self: center;
+  border-radius: 5%;
+}
+
+.hero-section > h1 {
+  color: white;
+  font-size: 50px;
+  align-self: center;
+}

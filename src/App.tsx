@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from "./Components/pages/Home/Home";
-import { FaqBusinessDetails } from "./Components/pages/FaqBusinessDetails/FaqBusinessDetails";
-import { PhotoGallery } from "./Components/pages/PhotoGallery/PhotoGallery";
-import { Events } from "./Components/pages/Events/Events";
+import { Home } from "./pages/Home/Home";
+import { FaqBusinessDetails } from "./pages/FaqBusinessDetails/FaqBusinessDetails";
+import { PhotoGallery } from "./pages/PhotoGallery/PhotoGallery";
+import { Events } from "./pages/Events/Events";
 import "./App.css";
 
 function App() {
