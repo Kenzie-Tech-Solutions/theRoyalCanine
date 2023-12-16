@@ -1,12 +1,12 @@
 import { NavBar } from "../../Components/NavBar/NavBar";
-import { eventDetails } from "../../eventDetails";
+import { eventDetails } from "../../utils/eventDetails";
 import styles from "./Events.module.css";
 
 export const Events = () => {
   return (
     <div>
       <div className={styles.heroSection}>
-        <NavBar />
+        <NavBar pageName="" />
         <h1>Events</h1>
       </div>
 

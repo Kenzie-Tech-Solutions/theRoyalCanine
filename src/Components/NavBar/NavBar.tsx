@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-export const NavBar = () => {
+type NavBarProps = {
+  pageName: string;
+};
+
+export const NavBar = ({ pageName }: NavBarProps) => {
   return (
-    <div className="nav-bar">
+    <div className={`${pageName !== "home" ? "nav-bar" : "nav-bar-home"}`}>
       <nav>
         <ul className="flex">
           <li>

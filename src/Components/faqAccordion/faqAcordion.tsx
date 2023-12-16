@@ -2,15 +2,14 @@ import styles from "./faqAccordion.module.css";
 import { useState } from "react";
 
 interface Props {
-  id: number;
   question: string;
   answer: string;
 }
 
-export const FaqAccordion = ({ id, question, answer }: Props) => {
+export const FaqAccordion = ({ question, answer }: Props) => {
   const [active, setActive] = useState(false);
   return (
-    <div className={styles.accordionWrapper} key={id}>
+    <div className={styles.accordionWrapper}>
       <button className={styles.accordion} onClick={() => setActive(!active)}>
         {question}
       </button>

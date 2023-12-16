@@ -1,6 +1,11 @@
 .nav-bar {
   margin: 25px auto;
-  max-width: 550px;
+  width: 550px;
+}
+
+.nav-bar-home {
+  margin: 25px auto 290px;
+  width: 550px;
 }
 
 .flex {
@@ -15,7 +20,7 @@
 .flex > li {
   margin: 0 10px;
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -26,7 +31,7 @@
 }
 
 .flex > li > a:hover {
-  color: #d1d1de;
+  color: #7070de;
 }
 
 

@@ -1,13 +1,13 @@
 import { NavBar } from "../../Components/NavBar/NavBar";
 import styles from "./faqBusinessDetails.module.css";
 import { FaqAccordion } from "../../Components/faqAccordion/faqAcordion";
-import { faqArray } from "../../faqArray";
+import { faqArray } from "../../utils/faqArray";
 
 export const FaqBusinessDetails = () => {
   return (
     <div>
       <div className={styles.heroSection}>
-        <NavBar />
+        <NavBar pageName="" />
         <div className={styles.pageHeader}>
           <h1>Business Details & FAQ</h1>
         </div>
@@ -31,7 +31,7 @@ export const FaqBusinessDetails = () => {
         <div className={styles.faqQuestionWrapper}>
           {faqArray.map((faq) => (
             <FaqAccordion
-              id={faq.id}
+              key={faq.id}
               question={faq.question}
               answer={faq.answer}
             />
