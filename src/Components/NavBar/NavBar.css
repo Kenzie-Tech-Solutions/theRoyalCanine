@@ -1,5 +1,6 @@
 .nav-bar {
-  margin-bottom: 50px;
+  margin: 25px auto;
+  max-width: 550px;
 }
 
 .flex {
