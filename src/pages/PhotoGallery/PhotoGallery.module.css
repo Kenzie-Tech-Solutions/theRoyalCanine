@@ -1,10 +1,8 @@
 .heroWrapper {
-  background-color: black;
   height: 300px
 }
 
 .heroWrapper > h1 {
-  color: white;
   text-align: center;
 }
 

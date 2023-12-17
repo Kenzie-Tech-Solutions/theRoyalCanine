@@ -57,7 +57,11 @@ export const Home = () => {
                 <input type="email" placeholder="email"></input>
                 <input type="tel" placeholder="phone"></input>
                 <textarea placeholder="message" cols={10} rows={5}></textarea>
-                <input type="submit" value="submit"></input>
+                <input
+                  className={style.submitBtn}
+                  type="submit"
+                  value="submit"
+                ></input>
               </form>
             </div>
           </div>

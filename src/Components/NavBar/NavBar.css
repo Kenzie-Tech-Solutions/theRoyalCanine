@@ -25,12 +25,21 @@
   cursor: pointer;
 }
 
-.flex > li > a {
+.nav-link-home > a {
   text-decoration: none;
   color: white;
 }
 
-.flex > li > a:hover {
+.nav-link-home > a:hover {
+  color: #7070de;
+}
+
+.nav-link > a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link > a:hover {
   color: #7070de;
 }
 
