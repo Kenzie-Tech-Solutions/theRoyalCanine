@@ -1,5 +1,6 @@
 import { NavBar } from "../../Components/NavBar/NavBar";
-import { galleryImgHolder } from "../../Components/galleryImgHolder/galleryImgHolder";
+import { GalleryImgHolder } from "../../Components/galleryImgHolder/galleryImgHolder";
+import { GalleryImgModal } from "../../galleryImgModal/galleryImgModal";
 import { imageArray } from "../../utils/imageArray";
 import styles from "./PhotoGallery.module.css";
 
@@ -11,8 +12,9 @@ export const PhotoGallery = () => {
         <h1>Photo Gallery</h1>
       </div>
       <div className={styles.galleryWrapper}>
-        {imageArray.map((img) => galleryImgHolder(img))}
+        {imageArray.map((img) => GalleryImgHolder(img))}
       </div>
+      <GalleryImgModal />
     </div>
   );
 };

@@ -4,18 +4,24 @@ import { FaqBusinessDetails } from "./pages/FaqBusinessDetails/FaqBusinessDetail
 import { PhotoGallery } from "./pages/PhotoGallery/PhotoGallery";
 import { Events } from "./pages/Events/Events";
 import "./App.css";
+import { ImgProvider } from "./providers/imgContext/imgContext";
 
 function App() {
   return (
     <div>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/faqBusinessDetails" element={<FaqBusinessDetails />} />
-          <Route path="/photoGallery" element={<PhotoGallery />} />
-          <Route path="/events" element={<Events />} />
-        </Routes>
-      </Router>
+      <ImgProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route
+              path="/faqBusinessDetails"
+              element={<FaqBusinessDetails />}
+            />
+            <Route path="/photoGallery" element={<PhotoGallery />} />
+            <Route path="/events" element={<Events />} />
+          </Routes>
+        </Router>
+      </ImgProvider>
     </div>
   );
 }

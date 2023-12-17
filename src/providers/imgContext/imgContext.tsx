@@ -1,10 +1,5 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { imageArray } from "../../utils/imageArray";
-
-type modalOpenProps = {
-  name: string;
-  id: string;
-};
 
 type imgArrProps = {
   id: number;
@@ -16,9 +11,9 @@ type imgArrProps = {
 
 type imgContext = {
   openModal: boolean;
-  setOpenModal: (value: boolean) => void;
-  modalOpen: (value: modalOpenProps) => void;
+  modalOpen: (id: number) => void;
   modalData: imgArrProps[];
+  modalClose?: () => void;
 };
 
 type imgContextProps = {
@@ -31,19 +26,25 @@ export const ImgProvider = ({ children }: imgContextProps) => {
   const [openModal, setOpenModal] = useState(false);
   const [modalData, setModalData] = useState<imgArrProps[]>([]);
 
-  const modalOpen = ({ name, id }: modalOpenProps) => {
-    if (name === undefined) {
-      const selectedItem = imageArray.filter(
-        (item) => item.id === parseInt(id)
-      );
-      setModalData(selectedItem);
-      setOpenModal(true);
-    }
+  const modalOpen = (id: number) => {
+    const selectedItem = imageArray.filter((item) => item.id === id);
+    setModalData(selectedItem);
+    setOpenModal(true);
   };
+
+  const modalClose = () => {
+    setOpenModal(false);
+  };
+
+  useEffect(() => {
+    openModal
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "unset");
+  }, [openModal]);
 
   return (
     <imgContext.Provider
-      value={{ openModal, setOpenModal, modalOpen, modalData }}
+      value={{ openModal, modalOpen, modalData, modalClose }}
     >
       {children}
     </imgContext.Provider>
@@ -55,5 +56,7 @@ export const useImgContext = () => {
   return {
     modalOpen: context.modalOpen,
     openModal: context.openModal,
+    modalData: context.modalData,
+    modalClose: context.modalClose,
   };
 };

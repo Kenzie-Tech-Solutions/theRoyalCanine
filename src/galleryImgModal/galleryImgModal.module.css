@@ -1,0 +1,45 @@
+.modalWrapper {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  background-color: white;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.8);
+  cursor: pointer;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+}
+
+.closeIcon {
+  cursor: pointer;
+}
+
+.modalDialog {
+  max-width: 800px;
+  max-height: 80vh;
+  background: #fff;
+  color: #161c2d;
+  overflow: hidden;
+  padding: 1.25rem 1.85rem;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.isVisible {
+  overflow: hidden;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s;
+}
