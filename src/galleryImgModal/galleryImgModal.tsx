@@ -16,16 +16,18 @@ export const GalleryImgModal = () => {
               styles.modalDialog
             }`}
           >
-            <div className="btnDiv">
+            <div className={styles.btnDiv}>
               <FontAwesomeIcon
                 icon={faTimes}
                 className={styles.closeIcon}
                 onClick={modalClose}
               />
             </div>
-            <img src={item.src} alt={item.alt} />
-            <h1>{item.title}</h1>
-            <p>{item.description}</p>
+            <div className={styles.modalContents}>
+              <img src={item.src} alt={item.alt} />
+              <h2>{item.title}</h2>
+              <p>{item.description}</p>
+            </div>
           </div>
         </div>
       ))}
