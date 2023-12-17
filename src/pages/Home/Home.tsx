@@ -19,7 +19,6 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <section className={style.backgroundImage}></section>
       <section className={style.infoSection}>
         <div className={style.basicInformationContainer}>
           <div className={style.basicInfoSection}>

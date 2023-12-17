@@ -1,10 +1,6 @@
 .pageBody {
   margin: auto;
 }
-/* 
-.headerSection {
-  
-} */
 
 .heroContainer {
   position: relative;
@@ -18,7 +14,6 @@
   height: 850px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   margin: auto;
   animation: fadeIn 1s;
 }
@@ -84,6 +79,7 @@ animation: fadeIn 1s;
 .infoSection {
   background-color: white;
   height: 500px;
+  animation: fadeIn 1s;
 }
 
 .basicInfoSection {

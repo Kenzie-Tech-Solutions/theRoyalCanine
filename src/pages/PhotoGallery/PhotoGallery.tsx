@@ -1,6 +1,6 @@
 import { NavBar } from "../../Components/NavBar/NavBar";
-import { GalleryImgHolder } from "../../Components/galleryImgHolder/galleryImgHolder";
-import { GalleryImgModal } from "../../galleryImgModal/galleryImgModal";
+import { GalleryImgHolder } from "../../Components/GalleryImgHolder/GalleryImgHolder";
+import { GalleryImgModal } from "../../GalleryImgModal/GalleryImgModal";
 import { imageArray } from "../../utils/imageArray";
 import styles from "./PhotoGallery.module.css";
 

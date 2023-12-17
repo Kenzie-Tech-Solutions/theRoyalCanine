@@ -1,6 +1,6 @@
 import { NavBar } from "../../Components/NavBar/NavBar";
 import styles from "./faqBusinessDetails.module.css";
-import { FaqAccordion } from "../../Components/faqAccordion/faqAcordion";
+import { FaqAccordion } from "../../Components/FaqAccordion/FaqAcordion";
 import { faqArray } from "../../utils/faqArray";
 
 export const FaqBusinessDetails = () => {

@@ -1,11 +1,13 @@
 .nav-bar {
   margin: 25px auto;
   width: 550px;
+  animation: fadeIn 2s;
 }
 
 .nav-bar-home {
   margin: 25px auto 290px;
   width: 550px;
+  animation: fadeIn 2s;
 }
 
 .flex {
@@ -43,4 +45,16 @@
   color: #7070de;
 }
 
-
+@keyframes fadeIn {
+  0% {
+    color: white;
+    opacity: 0;
+  }
+  25% {
+    color: white;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
