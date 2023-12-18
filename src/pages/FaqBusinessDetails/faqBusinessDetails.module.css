@@ -1,0 +1,40 @@
+.heroSection {
+  height: 300px;
+}
+
+.pageHeader {
+  margin-top: 50px;
+}
+
+.pageHeader > h1 {
+  text-align: center;
+}
+
+.businessDetails {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.businessDetails > ul > li {
+  list-style: none;
+  margin: 10px 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.faqSection {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.faqSection > h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.faqQuestionWrapper {
+  display: flex;
+  justify-content: space-around;
+}

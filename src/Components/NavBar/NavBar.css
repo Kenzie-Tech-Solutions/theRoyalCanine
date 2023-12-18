@@ -1,0 +1,60 @@
+.nav-bar {
+  margin: 25px auto;
+  width: 550px;
+  animation: fadeIn 2s;
+}
+
+.nav-bar-home {
+  margin: 25px auto 290px;
+  width: 550px;
+  animation: fadeIn 2s;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  height: 50px;
+  align-items: center;
+  width: 90%;
+}
+
+.flex > li {
+  margin: 0 10px;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-link-home > a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link-home > a:hover {
+  color: #7070de;
+}
+
+.nav-link > a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link > a:hover {
+  color: #7070de;
+}
+
+@keyframes fadeIn {
+  0% {
+    color: white;
+    opacity: 0;
+  }
+  25% {
+    color: white;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

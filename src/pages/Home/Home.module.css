@@ -1,0 +1,166 @@
+.pageBody {
+  margin: auto;
+}
+
+.heroContainer {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.heroSection {
+  position: relative;
+  background-color: black;
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  animation: fadeIn 1s;
+}
+
+.heroSection::before {
+  content:"";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -9999px;
+  box-shadow: 9999px 0 0 black;
+  z-index: -1;
+}
+
+.titleInfo > h1 {
+  color: white;
+  font-size: 8.3vw;
+  text-align: center;
+  margin: 0;
+}
+
+.titleInfo > p {
+  color: white;
+  font-size: 2.5vw;
+  text-align: center;
+  margin-bottom: 0;
+
+}
+
+.imgContainer {
+  position: absolute;
+  top: 110px;
+  left: 455px;
+}
+
+.imgContainer > img {
+  width: 300px;
+  align-self: center;
+  border-radius: 5%;
+  margin-bottom: 25px;
+}
+
+.backgroundImage {
+position: relative;
+height: 500px;
+animation: fadeIn 1s;
+}
+
+.backgroundImage::before {
+  content:"";
+  background-image: url("../../assets/dog-background-image.jpg");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -9999px;
+  box-shadow: 9999px 0 0 url("../../assets/dog-background-image.jpg");
+  z-index: -1;
+}
+
+.infoSection {
+  background-color: white;
+  height: 500px;
+  animation: fadeIn 1s;
+}
+
+.basicInfoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.basicInfoSection > h1 {
+  font-size: 45px;
+}
+
+.basicInfoSection > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.basicInfoSection > ul > li {
+  font-size: 30px;
+  list-style: none;
+  margin: 10px 0;
+}
+
+.basicInfoSection > p {
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+}
+
+.contactInfoSection {
+  background-color: white;
+  height: 500px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactInfo > h2 {
+  font-size: 35px;
+}
+
+.contactInfo > div {
+  width: 50%;
+}
+
+.contactInfo > div > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo > div > form > input, .contactInfo > div > form > textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.submitBtn {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+}
+
+@keyframes fadeIn {
+  0% {
+    color: white;
+    opacity: 0;
+  }
+  25% {
+    color: white;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
