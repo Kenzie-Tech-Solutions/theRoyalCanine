@@ -4,7 +4,7 @@ import { FaqBusinessDetails } from "./pages/FaqBusinessDetails/FaqBusinessDetail
 import { PhotoGallery } from "./pages/PhotoGallery/PhotoGallery";
 import { Events } from "./pages/Events/Events";
 import "./App.css";
-import { ImgProvider } from "./providers/imgContext/ImgContext";
+import { ImgProvider } from "./providers/imgContext/imgContext";
 
 function App() {
   return (
