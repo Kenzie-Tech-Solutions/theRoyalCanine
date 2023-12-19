@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
 import { FaqBusinessDetails } from "./pages/FaqBusinessDetails/FaqBusinessDetails";
 import { PhotoGallery } from "./pages/PhotoGallery/PhotoGallery";
@@ -10,17 +10,12 @@ function App() {
   return (
     <div>
       <ImgProvider>
-        <Router>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route
-              path="/faqBusinessDetails"
-              element={<FaqBusinessDetails />}
-            />
-            <Route path="/photoGallery" element={<PhotoGallery />} />
-            <Route path="/events" element={<Events />} />
-          </Routes>
-        </Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/faqBusinessDetails" element={<FaqBusinessDetails />} />
+          <Route path="/photoGallery" element={<PhotoGallery />} />
+          <Route path="/events" element={<Events />} />
+        </Routes>
       </ImgProvider>
     </div>
   );
