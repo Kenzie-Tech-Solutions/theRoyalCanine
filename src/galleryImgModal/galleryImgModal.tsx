@@ -8,6 +8,7 @@ export const GalleryImgModal = () => {
   return (
     <div
       className={`${styles.modalWrapper} ${!openModal ? "" : styles.isVisible}`}
+      onClick={modalClose}
     >
       {modalData.map((item) => (
         <div data-animation="slideInOutTop" key={item.id}>

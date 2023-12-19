@@ -10,7 +10,7 @@ export const Home = () => {
           <div className={style.heroSection}>
             <NavBar pageName={"home"} />
             <div className={style.titleInfo}>
-              <h1>the Royal canine</h1>
+              <h1>The Royal Canine</h1>
               <p>Burlington, Wisconsin</p>
             </div>
           </div>
