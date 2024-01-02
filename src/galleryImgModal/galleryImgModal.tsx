@@ -1,13 +1,22 @@
-import { useImgContext } from "../providers/imgContext/ImgContext";
+import { useImgContext } from "../providers/imgContext/imgContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import styles from "./galleryImgModal.module.css";
 
 export const GalleryImgModal = () => {
   const { modalData, openModal, modalClose } = useImgContext();
+
+  const handleWrapperClick = (
+    e: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
+    if (e.target === e.currentTarget && modalClose) {
+      modalClose();
+    }
+  };
   return (
     <div
       className={`${styles.modalWrapper} ${!openModal ? "" : styles.isVisible}`}
+      onClick={handleWrapperClick}
     >
       {modalData.map((item) => (
         <div data-animation="slideInOutTop" key={item.id}>

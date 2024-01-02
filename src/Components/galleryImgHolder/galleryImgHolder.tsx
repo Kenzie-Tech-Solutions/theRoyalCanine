@@ -1,4 +1,4 @@
-import { useImgContext } from "../../providers/imgContext/ImgContext";
+import { useImgContext } from "../../providers/imgContext/imgContext";
 
 type galleryImgHolderProps = {
   id: number;
