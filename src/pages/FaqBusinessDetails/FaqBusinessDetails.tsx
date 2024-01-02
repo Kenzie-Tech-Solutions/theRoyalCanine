@@ -9,16 +9,18 @@ export const FaqBusinessDetails = () => {
       <div className={styles.heroSection}>
         <NavBar pageName="" />
         <div className={styles.pageHeader}>
-          <h1>Business Details & FAQ</h1>
+          <h1>BUSINESS DETAILS & FAQ</h1>
         </div>
       </div>
 
       <div className={styles.businessDetails}>
-        <h2>business details </h2>
+        <h2>BUSINESS DETAILS</h2>
+        {/* change to h3 tags each in its own div then p tag */}
+        {/* change fonts style and add hr  */}
         <ul>
-          <li>business hours</li>
-          <li>location</li>
-          <li>phone</li>
+          <li>BUSINESS HOURS</li>
+          <li>LOCATION</li>
+          <li>PHONE</li>
         </ul>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat

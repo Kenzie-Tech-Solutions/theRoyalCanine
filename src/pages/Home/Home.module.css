@@ -46,9 +46,8 @@
 }
 
 .imgContainer {
-  position: absolute;
-  top: 110px;
-  left: 455px;
+  display: flex;
+  justify-content: center;
 }
 
 .imgContainer > img {
@@ -93,22 +92,24 @@ animation: fadeIn 1s;
   font-size: 45px;
 }
 
-.basicInfoSection > ul {
+.basicInfoSection > div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 300px;
 }
 
-.basicInfoSection > ul > li {
-  font-size: 30px;
-  list-style: none;
-  margin: 10px 0;
-}
+/* .basicInfoSection > div { */
+  /* font-size: 30px; */
+  /* list-style: none;
+  margin: 10px 0; */
+/* } */
 
 .basicInfoSection > p {
   font-size: 20px;
   width: 50%;
   text-align: center;
+  height: 300px;
+  overflow-y: auto;
 }
 
 .contactInfoSection {

@@ -37,4 +37,20 @@
 .faqQuestionWrapper {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+
+
+@media (max-width: 600px) {
+  .heroSection {
+    height: 200px;
+  }
+  .faqQuestionWrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }

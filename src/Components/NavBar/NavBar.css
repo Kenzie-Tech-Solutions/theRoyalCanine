@@ -5,7 +5,7 @@
 }
 
 .nav-bar-home {
-  margin: 25px auto 290px;
+  margin: 25px auto 100px;
   width: 550px;
   animation: fadeIn 2s;
 }
@@ -43,6 +43,16 @@
 
 .nav-link > a:hover {
   color: #7070de;
+}
+
+@media (max-width: 600px) {
+  .nav-bar-home {
+    width: 100%;
+  }
+
+  .nav-bar {
+    width: 100%;
+  }
 }
 
 @keyframes fadeIn {
