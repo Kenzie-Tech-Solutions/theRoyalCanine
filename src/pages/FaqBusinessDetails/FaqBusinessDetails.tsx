@@ -15,29 +15,48 @@ export const FaqBusinessDetails = () => {
 
       <div className={styles.businessDetails}>
         <h2>BUSINESS DETAILS</h2>
-        {/* change to h3 tags each in its own div then p tag */}
-        {/* change fonts style and add hr  */}
-        <ul>
-          <li>BUSINESS HOURS</li>
-          <li>LOCATION</li>
-          <li>PHONE</li>
-        </ul>
+        <div>
+          <h3>ABOUT US</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            eligendi enim magni nesciunt atque nam nemo natus unde ea quis, quae
+            itaque dolores, rem totam accusantium beatae explicabo quos quod!
+          </p>
+          <hr />
+        </div>
+        <div className={styles.businessInfo}>
+          <div>
+            <h3>BUSINESS HOURS</h3>
+            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            <p>Saturday: 9:00 AM - 1:00 PM</p>
+          </div>
+          <div>
+            <h3>LOCATION</h3>
+            <p>1234 Main St. Suite 100</p>
+            <p>City, State 12345</p>
+          </div>
+          <div>
+            <h3>PHONE</h3>
+            <p>123-456-7890</p>
+          </div>
+        </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
           eligendi enim magni nesciunt atque nam nemo natus unde ea quis, quae
           itaque dolores, rem totam accusantium beatae explicabo quos quod!
         </p>
-      </div>
-      <div className={styles.faqSection}>
-        <h2>FAQ</h2>
-        <div className={styles.faqQuestionWrapper}>
-          {faqArray.map((faq) => (
-            <FaqAccordion
-              key={faq.id}
-              question={faq.question}
-              answer={faq.answer}
-            />
-          ))}
+        <hr />
+        <div className={styles.faqSection}>
+          <h2>FAQ</h2>
+          <div className={styles.faqQuestionWrapper}>
+            {faqArray.map((faq) => (
+              <FaqAccordion
+                key={faq.id}
+                question={faq.question}
+                answer={faq.answer}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

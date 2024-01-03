@@ -1,3 +1,20 @@
+body h1, body h2 , body h3 {
+  color: #000;
+  font-family: calluna;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: .1em;
+  line-height: 1.9em;
+}
+
+body p {
+  color: #949494;
+  font-family: calluna;
+  letter-spacing: .015em;
+  line-height: 2.3em;
+  font-weight: 300;
+}
+
 .heroSection {
   height: 300px;
 }
@@ -11,16 +28,42 @@
 }
 
 .businessDetails {
-  width: 300px;
+  width: 90%;
   margin: auto;
   text-align: center;
 }
 
-.businessDetails > ul > li {
-  list-style: none;
-  margin: 10px 0px;
-  font-size: 20px;
+.businessInfo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+} 
+
+.businessInfo > div {
+  width: 300px;
+  margin: 10px;
+}
+
+.businessInfo > div > h3 {
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+  font-family: calluna;
   font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: .1em;
+  line-height: 1.9em;
+}
+
+.businessInfo > div > p {
+  color: #949494;
+  font-family: calluna;
+  text-align: center;
+  font-size: 13px;
+  letter-spacing: .015em;
+  line-height: 2.3em;
+  font-weight: 300;
 }
 
 .faqSection {
@@ -38,7 +81,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  
+
 }
 
 
