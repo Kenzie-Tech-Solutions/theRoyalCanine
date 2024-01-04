@@ -81,7 +81,22 @@ body p {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
 
+.questionDivs {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 300px;
+  text-align: left;
+  border: none;
+  outline: none;
+  margin: 10px;
+}
+
+.questionsDivs:hover {
+  background-color: #ccc;
 }
 
 @media (max-width: 700px) {
@@ -89,8 +104,6 @@ body p {
     margin-top: 25px;
   }
 }
-
-
 
 @media (max-width: 600px) {
   .heroSection {
@@ -101,5 +114,10 @@ body p {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .questionDivs {
+    width: 230px;
+    margin-bottom: 25px;
   }
 }
