@@ -1,6 +1,7 @@
 import { NavBar } from "../../Components/NavBar/NavBar";
 import style from "./Home.module.css";
 import logo from "../../assets/logo.jpg";
+import { MenuModal } from "../../Components/MenuModal/menuModal";
 
 export const Home = () => {
   return (
@@ -71,6 +72,7 @@ export const Home = () => {
           <div />
         </div>
       </section>
+      <MenuModal pageName="" />
     </div>
   );
 };

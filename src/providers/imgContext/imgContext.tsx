@@ -14,6 +14,9 @@ type imgContext = {
   modalOpen: (id: number) => void;
   modalData: imgArrProps[];
   modalClose?: () => void;
+  navModalOpen?: () => void;
+  navModal?: boolean;
+  navModalClose?: () => void;
 };
 
 type imgContextProps = {
@@ -25,6 +28,7 @@ const imgContext = createContext({} as imgContext);
 export const ImgProvider = ({ children }: imgContextProps) => {
   const [openModal, setOpenModal] = useState(false);
   const [modalData, setModalData] = useState<imgArrProps[]>([]);
+  const [navModal, setNavModal] = useState(false);
 
   const modalOpen = (id: number) => {
     const selectedItem = imageArray.filter((item) => item.id === id);
@@ -36,15 +40,37 @@ export const ImgProvider = ({ children }: imgContextProps) => {
     setOpenModal(false);
   };
 
+  const navModalOpen = () => {
+    setNavModal(true);
+  };
+
+  const navModalClose = () => {
+    setNavModal(false);
+  };
+
   useEffect(() => {
     openModal
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = "unset");
   }, [openModal]);
 
+  useEffect(() => {
+    navModal
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "unset");
+  }, [navModal]);
+
   return (
     <imgContext.Provider
-      value={{ openModal, modalOpen, modalData, modalClose }}
+      value={{
+        openModal,
+        modalOpen,
+        modalData,
+        modalClose,
+        navModalOpen,
+        navModal,
+        navModalClose,
+      }}
     >
       {children}
     </imgContext.Provider>
@@ -58,5 +84,8 @@ export const useImgContext = () => {
     openModal: context.openModal,
     modalData: context.modalData,
     modalClose: context.modalClose,
+    navModalOpen: context.navModalOpen,
+    navModal: context.navModal,
+    navModalClose: context.navModalClose,
   };
 };

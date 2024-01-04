@@ -1,3 +1,4 @@
+import { MenuModal } from "../../Components/MenuModal/menuModal";
 import { NavBar } from "../../Components/NavBar/NavBar";
 import { GalleryImgHolder } from "../../Components/galleryImgHolder/galleryImgHolder";
 import { GalleryImgModal } from "../../galleryImgModal/galleryImgModal";
@@ -15,6 +16,7 @@ export const PhotoGallery = () => {
         {imageArray.map((img) => GalleryImgHolder(img))}
       </div>
       <GalleryImgModal />
+      <MenuModal pageName="" />
     </div>
   );
 };

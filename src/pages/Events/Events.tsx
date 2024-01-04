@@ -1,3 +1,4 @@
+import { MenuModal } from "../../Components/MenuModal/menuModal";
 import { NavBar } from "../../Components/NavBar/NavBar";
 import { eventDetails } from "../../utils/eventDetails";
 import styles from "./Events.module.css";
@@ -21,6 +22,7 @@ export const Events = () => {
           );
         })}
       </div>
+      <MenuModal pageName="" />
     </div>
   );
 };

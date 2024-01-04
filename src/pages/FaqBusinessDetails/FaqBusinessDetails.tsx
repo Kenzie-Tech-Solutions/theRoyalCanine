@@ -2,10 +2,11 @@ import { NavBar } from "../../Components/NavBar/NavBar";
 import styles from "./faqBusinessDetails.module.css";
 import { FaqAccordion } from "../../Components/faqAccordion/faqAcordion";
 import { faqArray } from "../../utils/faqArray";
+import { MenuModal } from "../../Components/MenuModal/menuModal";
 
 export const FaqBusinessDetails = () => {
   return (
-    <div>
+    <div className={styles.pageWrapper}>
       <div className={styles.heroSection}>
         <NavBar pageName="" />
         <div className={styles.pageHeader}>
@@ -59,6 +60,7 @@ export const FaqBusinessDetails = () => {
           </div>
         </div>
       </div>
+      <MenuModal pageName="" />
     </div>
   );
 };

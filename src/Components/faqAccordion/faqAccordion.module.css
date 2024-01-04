@@ -1,3 +1,7 @@
+.pageWrapper {
+  position: relative;
+}
+
 .accordionWrapper {
   width: 300px;
   margin-bottom: 25px;
