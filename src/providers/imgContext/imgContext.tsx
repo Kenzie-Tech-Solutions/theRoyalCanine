@@ -83,6 +83,12 @@ export const ImgProvider = ({ children }: imgContextProps) => {
       : (document.body.style.overflow = "unset");
   }, [navModal]);
 
+  useEffect(() => {
+    answerModal
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "unset");
+  }, [answerModal]);
+
   return (
     <imgContext.Provider
       value={{
