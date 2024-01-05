@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.carousel {
+  width: 600px;
+}
+
 .galleryWrapper {
   display: flex;
   flex-wrap: wrap;
