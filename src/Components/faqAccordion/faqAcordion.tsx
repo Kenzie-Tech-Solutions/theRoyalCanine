@@ -3,7 +3,7 @@ import { useState } from "react";
 
 interface Props {
   question: string;
-  answer: string;
+  answer: string[];
 }
 
 export const FaqAccordion = ({ question, answer }: Props) => {
@@ -14,7 +14,11 @@ export const FaqAccordion = ({ question, answer }: Props) => {
         {question}
       </button>
       <div className={styles.answer} style={active ? { display: "block" } : {}}>
-        <p>{answer}</p>
+        <ul>
+          {answer.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );

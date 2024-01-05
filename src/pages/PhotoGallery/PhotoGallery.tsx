@@ -12,6 +12,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import { Footer } from "../../Components/Footer/Footer";
 
 export const PhotoGallery = () => {
   return (
@@ -69,6 +70,7 @@ export const PhotoGallery = () => {
       </div>
       <GalleryImgModal />
       <MenuModal pageName="" />
+      <Footer />
     </div>
   );
 };

@@ -1,8 +1,10 @@
-/* .footer {
-  
-} */
+.footerSection {
+  background-color: black;
+  height: 100px;
+}
 
 .brandName > p {
   margin: 0;
   color: white;
 }
+

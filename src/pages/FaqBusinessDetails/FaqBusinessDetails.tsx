@@ -2,14 +2,15 @@ import { NavBar } from "../../Components/NavBar/NavBar";
 import styles from "./faqBusinessDetails.module.css";
 import { FaqAccordion } from "../../Components/faqAccordion/faqAcordion";
 import { faqArray } from "../../utils/faqArray";
-import { MenuModal } from "../../Components/MenuModal/menuModal";
+import { MenuModal } from "../../Components/MenuModal/MenuModal";
 import { useEffect, useState } from "react";
 import { AnswerModal } from "../../Components/AnswerModal/AnswerModal";
 import { useImgContext } from "../../providers/imgContext/imgContext";
+import { Footer } from "../../Components/Footer/Footer";
 
 export const FaqBusinessDetails = () => {
   const { answerModalOpen } = useImgContext();
-  // Inside your component
+
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -48,17 +49,21 @@ export const FaqBusinessDetails = () => {
         <div className={styles.businessInfo}>
           <div>
             <h3>BUSINESS HOURS</h3>
-            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-            <p>Saturday: 9:00 AM - 1:00 PM</p>
+            <p>8:00 AM - 8:00 PM / 7 days a week</p>
+            <p>
+              Please follow us on Facebook for any closures or changes to our
+              hours.
+            </p>
           </div>
           <div>
             <h3>LOCATION</h3>
-            <p>1234 Main St. Suite 100</p>
-            <p>City, State 12345</p>
+            <p> 525 N. Pine St.</p>
+            <p>Burlington, WI 53105</p>
           </div>
           <div>
-            <h3>PHONE</h3>
-            <p>123-456-7890</p>
+            <h3>CONTACT INFORMATION</h3>
+            <p>PHONE: 262.273.2961</p>
+            <p>EMAIL: theroalcanine53105@gmail.com</p>
           </div>
         </div>
         <p>
@@ -92,6 +97,8 @@ export const FaqBusinessDetails = () => {
       </div>
       <AnswerModal />
       <MenuModal pageName="" />
+
+      <Footer />
     </div>
   );
 };

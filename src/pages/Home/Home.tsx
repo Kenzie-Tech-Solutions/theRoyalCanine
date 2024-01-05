@@ -27,9 +27,17 @@ export const Home = () => {
         <div className={style.basicInformationContainer}>
           <div className={style.basicInfoSection}>
             <h2>Heading</h2>
-            <div>
-              <h3>Business Hours</h3>
-              <h3>Location</h3>
+            <div className={style.businessDetails}>
+              <div>
+                <h3>Hours</h3>
+                <p>8 am - 8 pm</p>
+                <p>7 days a week</p>
+              </div>
+              <div>
+                <h3>Location</h3>
+                <p>525 N. Pine St.</p>
+                <p>Burlington, WI 53105</p>
+              </div>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat

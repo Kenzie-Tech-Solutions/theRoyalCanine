@@ -13,7 +13,7 @@ type imgArrProps = {
 type ArrProps = {
   id: number;
   question: string;
-  answer: string;
+  answer: string[];
 };
 
 type imgContext = {
