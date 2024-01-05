@@ -37,7 +37,9 @@ export const AnswerModal = () => {
             <div className={styles.modalContents}>
               <ul>
                 {item.answer.map((item) => (
-                  <li key={item}>{item}</li>
+                  <li className={styles.li} key={item}>
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>
