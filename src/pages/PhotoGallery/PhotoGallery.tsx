@@ -6,6 +6,12 @@ import { GalleryImgModal } from "../../galleryImgModal/galleryImgModal";
 import { imageArray } from "../../utils/imageArray";
 import styles from "./PhotoGallery.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./carousel.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const PhotoGallery = () => {
   return (
@@ -14,15 +20,50 @@ export const PhotoGallery = () => {
         <NavBar pageName="" />
         <h1>Photo Gallery</h1>
       </div>
+      <hr className={styles.hr} />
       <div className={styles.carouselDiv}>
-        <Carousel className={styles.carousel} width="600px">
+        <Carousel
+          className={styles.carousel}
+          autoPlay={true}
+          autoFocus={true}
+          infiniteLoop={true}
+          interval={4000}
+          renderArrowPrev={(onClickHandler, hasNext, label) =>
+            hasNext && (
+              <button
+                type="button"
+                onClick={onClickHandler}
+                title={label}
+                className={styles.arrowPrev}
+              >
+                <FontAwesomeIcon icon={faChevronLeft} />
+              </button>
+            )
+          }
+          renderArrowNext={(onClickHandler, hasNext, label) =>
+            hasNext && (
+              <button
+                type="button"
+                onClick={onClickHandler}
+                title={label}
+                className={styles.arrowNext}
+              >
+                <FontAwesomeIcon icon={faChevronRight} />
+              </button>
+            )
+          }
+        >
           {imageArray.map((img, index) => (
-            <div key={index} className={styles.carouselImg}>
-              <img src={img.src} alt={img.alt} />
-            </div>
+            <img
+              key={index}
+              src={img.src}
+              alt={img.alt}
+              className={styles.carouselImg}
+            />
           ))}
         </Carousel>
       </div>
+      <hr className={styles.hr} />
       <div className={styles.galleryWrapper}>
         {imageArray.map((img) => GalleryImgHolder(img))}
       </div>
