@@ -14,10 +14,10 @@ export const PhotoGallery = () => {
         <NavBar pageName="" />
         <h1>Photo Gallery</h1>
       </div>
-      <div>
-        <Carousel className={styles.carousel}>
+      <div className={styles.carouselDiv}>
+        <Carousel className={styles.carousel} width="600px">
           {imageArray.map((img, index) => (
-            <div key={index}>
+            <div key={index} className={styles.carouselImg}>
               <img src={img.src} alt={img.alt} />
             </div>
           ))}
