@@ -79,7 +79,7 @@ export const Home = () => {
         </div>
       </section>
       <section className={style.imageSection}>
-        <div className={style.imageContainer}>
+        <div className={style.imageContainer1}>
           <div className={style.img0}>
             <img src={img0} alt="self service dog wash" />
           </div>

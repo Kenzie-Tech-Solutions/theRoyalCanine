@@ -1,7 +1,7 @@
 export const faqArray = [
   {
     id: 0,
-    question: "Payment at the Machine:",
+    question: "Payment at the Machine",
     answer: [
       "Payment can be made with cash (exact change only), prepaid wash tokens, card or “touch to pay” at the terminals on the machines.",
       "A $15 wash MUST be purchased to start the wash cycle. (If less than 15 minutes is purchased to start, the machine will not activate. If this happens, add & pay for additional time in 3-minute increments until 15 minutes is reached – then the wash will start.)",
@@ -10,7 +10,7 @@ export const faqArray = [
   },
   {
     id: 1,
-    question: "Tub “Disinfect” Feature:",
+    question: "Tub “Disinfect” Feature",
     answer: [
       "The wash tubs can be sanitized before each use, but pups should NOT be inside during.",
       "Upon payment, a message on the screen will ask if you would like to disinfect. Click “Yes/Disinfect”. (Green button/2nd from bottom) Confirm your dog is out of the tub and click “Yes” again. This does not count towards your wash time.",
@@ -20,7 +20,7 @@ export const faqArray = [
   },
   {
     id: 2,
-    question: "Bathing in the Tubs:",
+    question: "Bathing in the Tubs",
     answer: [
       "The water temperature is not adjustable but has been pre-set to a safe and comfortable temperature.",
       "There are chains at either end of the tubs that can be attached to a collar. Alternatively, there are black nylon choke collars attached to the chains that may be used instead.",
@@ -34,7 +34,7 @@ export const faqArray = [
   },
   {
     id: 3,
-    question: "Dryers/Towels:",
+    question: "Dryers/Towels",
     answer: [
       "The dryers make some dogs anxious. Stay close to prevent them from jumping out of the tubs.",
       "Our “happy hoodies” and CBD treats are a HUGE help in calming them during drying!",
@@ -43,14 +43,14 @@ export const faqArray = [
   },
   {
     id: 4,
-    question: "Retail:",
+    question: "Retail",
     answer: [
       "If no attendant is present and you would like to purchase any retail products or wash tokens/packages, please call or text 262-273-2961 and we will do our best to meet you ASAP.",
     ],
   },
   {
     id: 5,
-    question: "Pro-Tips:",
+    question: "Pro-Tips",
     answer: [
       "“Stop/Pause” is the bottom button on the row. Press it to stop the timer if necessary. Click any another button to re-start the cycle.",
       "Some dogs are confused by the ramps and don’t want to use them. Entice them by holding a treat at the top of the ramp!",

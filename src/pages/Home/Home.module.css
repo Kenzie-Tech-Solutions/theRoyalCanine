@@ -32,14 +32,14 @@
 
 .titleInfo > h1 {
   color: white;
-  font-size: 8.3vw;
+  font-size: 100px;
   text-align: center;
   margin: 0;
 }
 
 .titleInfo > p {
   color: white;
-  font-size: 2.5vw;
+  font-size: 60px;
   text-align: center;
   margin-bottom: 0;
 
@@ -79,7 +79,6 @@ animation: fadeIn 1s;
 
 .infoSection {
   position: relative;
-  /* background-color: white; */
   height: 650px;
   animation: fadeIn 1s;
 }
@@ -201,20 +200,36 @@ animation: fadeIn 1s;
 
 .imageSection {
   max-height: 800px;
+  position: relative;
 }
 
-.imageContainer {
+.imageContainer1 {
   display: flex;
+  justify-content: space-around;
+}
+
+.imageContainer1::before {
+  content:"";
+  background-image: url("../../assets/dog-background-image.jpg");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -9999px;
+  box-shadow: 9999px 0 0 url("../../assets/dog-background-image.jpg");
+  z-index: -1;
+  opacity: 0.5;
 }
 
 .img0, .img7 {
-  max-width: 800px;
-  max-height: 800px;
+  max-width: 450px;
+  max-height: 450px;
 }
 
 .img0 > img, .img7 > img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 .footerSection {
@@ -238,7 +253,26 @@ animation: fadeIn 1s;
   }
 }
 
+@media (max-width: 1000px) {
+  .titleInfo > h1 {
+    font-size: 70px;
+  }
+
+  .titleInfo > p {
+    font-size: 50px;
+  }
+  
+}
+
 @media (max-width: 700px) {
+  .titleInfo > h1 {
+    font-size: 50px;
+  }
+
+  .titleInfo > p {
+    font-size: 30px;
+  }
+
   .exit {
     color: white;
   }
@@ -247,11 +281,13 @@ animation: fadeIn 1s;
     max-height: unset;
   }
 
-  .imageContainer {
+  .imageContainer1 {
     flex-direction: column;
+    align-items: center;
   }
 
-  .img7 > img {
+  .img7 {
+    margin-top: 20px;
     height: 800px;
   }
 }
