@@ -1,7 +1,16 @@
+import img7 from "../assets/image7.jpeg";
+import img0 from "../assets/image0.jpeg";
+import img1 from "../assets/image1.jpeg";
+import img2 from "../assets/image2.jpeg";
+import img3 from "../assets/image3.jpeg";
+import img4 from "../assets/image4.jpeg";
+import img5 from "../assets/image5.jpeg";
+import img6 from "../assets/image6.jpeg";
+
 export const imageArray = [
   {
     id: 0,
-    src: "src/assets/image7.jpeg",
+    src: img7,
     alt: "dog",
     title: "Dog 1",
     description:
@@ -9,49 +18,49 @@ export const imageArray = [
   },
   {
     id: 1,
-    src: "src/assets/image0.jpeg",
+    src: img0,
     alt: "dog",
     title: "Dog 2",
     description: "This is a dog",
   },
   {
     id: 2,
-    src: "src/assets/image1.jpeg",
+    src: img1,
     alt: "dog",
     title: "Dog 3",
     description: "This is a dog",
   },
   {
     id: 3,
-    src: "src/assets/image2.jpeg",
+    src: img2,
     alt: "dog",
     title: "Dog 4",
     description: "This is a dog",
   },
   {
     id: 4,
-    src: "src/assets/image3.jpeg",
+    src: img3,
     alt: "dog",
     title: "Dog 5",
     description: "This is a dog",
   },
   {
     id: 5,
-    src: "src/assets/image4.jpeg",
+    src: img4,
     alt: "dog",
     title: "Dog 6",
     description: "This is a dog",
   },
   {
     id: 6,
-    src: "src/assets/image5.jpeg",
+    src: img5,
     alt: "dog",
     title: "Dog 6",
     description: "This is a dog",
   },
   {
     id: 7,
-    src: "src/assets/image6.jpeg",
+    src: img6,
     alt: "dog",
     title: "Dog 6",
     description: "This is a dog",
