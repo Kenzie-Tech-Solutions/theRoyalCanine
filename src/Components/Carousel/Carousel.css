@@ -35,6 +35,7 @@
   transition: all 0.5s ease-in-out;
   object-fit: contain;
   background-color: black;
+  
 }
 
 .carouselRightBtn {
