@@ -1,3 +1,20 @@
 body {
   margin: 0;
 }
+
+body h1, body h2 , body h3 {
+  color: #000;
+  font-family: calluna;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: .1em;
+  line-height: 1.9em;
+}
+
+body p {
+  color: #949494;
+  font-family: calluna;
+  letter-spacing: .015em;
+  line-height: 2.3em;
+  font-weight: 300;
+}

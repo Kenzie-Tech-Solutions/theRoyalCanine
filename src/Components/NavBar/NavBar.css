@@ -1,11 +1,16 @@
 .nav-bar {
   margin: 25px auto;
-  width: 550px;
+  width: 700px;
   animation: fadeIn 2s;
 }
 
+.hamburger-menu {
+  display: none;
+  position: absolute;
+}
+
 .nav-bar-home {
-  margin: 25px auto 290px;
+  margin: 25px auto 100px;
   width: 550px;
   animation: fadeIn 2s;
 }
@@ -38,11 +43,55 @@
 
 .nav-link > a {
   text-decoration: none;
-  color: black;
+  /* color: black */
+  font-family: Playfair Display;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: .5em;
+  text-transform: uppercase;
 }
 
 .nav-link > a:hover {
   color: #7070de;
+}
+
+@media (max-width: 700px) {
+  .nav-bar-home {
+    width: 100%;
+  }
+
+  .nav-bar {
+    width: 100%;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+    display: none;
+  }
+
+  .hamburger-div {
+    position: relative;
+    height: 30px;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    z-index: 100;
+    left: 35px;
+    top: 20px;
+    font-size: 25px;
+  }
+
+  .home-hamburger {
+    color: white;
+  }
+
+  .hide {
+    display: none;
+    
+  }
 }
 
 @keyframes fadeIn {

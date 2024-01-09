@@ -1,0 +1,38 @@
+.carousel-root {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+.carousel.carousel-slider {
+  width: 70% !important;
+}
+
+.carousel .slide {
+  width: 600px;
+  height: 600px;
+}
+
+.control-dots {
+  display: none;
+}
+
+.carousel .thumbs {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .carousel.carousel-slider {
+    width: 100% !important;
+  }
+
+  .carousel .thumbs-wrapper {
+    display: none;
+  }
+}
+

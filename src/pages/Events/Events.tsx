@@ -1,3 +1,5 @@
+import { Footer } from "../../Components/Footer/Footer";
+import { MenuModal } from "../../Components/MenuModal/MenuModal";
 import { NavBar } from "../../Components/NavBar/NavBar";
 import { eventDetails } from "../../utils/eventDetails";
 import styles from "./Events.module.css";
@@ -9,7 +11,6 @@ export const Events = () => {
         <NavBar pageName="" />
         <h1>Events</h1>
       </div>
-
       <div className={styles.eventsSection}>
         {eventDetails.map((event) => {
           return (
@@ -21,6 +22,8 @@ export const Events = () => {
           );
         })}
       </div>
+      <MenuModal pageName="" />
+      <Footer />
     </div>
   );
 };

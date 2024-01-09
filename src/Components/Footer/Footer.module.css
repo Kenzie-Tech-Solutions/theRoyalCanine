@@ -1,0 +1,11 @@
+.footerSection {
+  background-color: black;
+  height: 100px;
+}
+
+.brandName > p {
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+

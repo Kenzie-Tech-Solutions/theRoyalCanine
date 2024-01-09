@@ -1,6 +1,10 @@
 import { NavBar } from "../../Components/NavBar/NavBar";
 import style from "./Home.module.css";
 import logo from "../../assets/logo.jpg";
+import { MenuModal } from "../../Components/MenuModal/MenuModal";
+import img0 from "../../assets/image0.jpeg";
+import img7 from "../../assets/image7.jpeg";
+import { Footer } from "../../Components/Footer/Footer";
 
 export const Home = () => {
   return (
@@ -9,13 +13,13 @@ export const Home = () => {
         <div className={style.heroContainer}>
           <div className={style.heroSection}>
             <NavBar pageName={"home"} />
+            <div className={style.imgContainer}>
+              <img src={logo} alt="logo" />
+            </div>
             <div className={style.titleInfo}>
               <h1>The Royal Canine</h1>
               <p>Burlington, Wisconsin</p>
             </div>
-          </div>
-          <div className={style.imgContainer}>
-            <img src={logo} alt="logo" />
           </div>
         </div>
       </section>
@@ -23,10 +27,18 @@ export const Home = () => {
         <div className={style.basicInformationContainer}>
           <div className={style.basicInfoSection}>
             <h2>Heading</h2>
-            <ul>
-              <li>business hours</li>
-              <li>location</li>
-            </ul>
+            <div className={style.businessDetails}>
+              <div>
+                <h3>Hours</h3>
+                <p>8 am - 8 pm</p>
+                <p>7 days a week</p>
+              </div>
+              <div>
+                <h3>Location</h3>
+                <p>525 N. Pine St.</p>
+                <p>Burlington, WI 53105</p>
+              </div>
+            </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
               eligendi enim magni nesciunt atque nam nemo natus unde ea quis,
@@ -45,11 +57,10 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <section className={style.backgroundImage}></section>
       <section className={style.contactInfoSection}>
         <div className={style.contactInfoContainer}>
           <div className={style.contactInfo}>
-            <h2>contact info</h2>
+            <h2>CONTACT INFO</h2>
             <div>
               <form action="link-to-get-form.io">
                 <input type="text" placeholder="name"></input>
@@ -67,6 +78,20 @@ export const Home = () => {
           <div />
         </div>
       </section>
+      <section className={style.imageSection}>
+        <div className={style.imageContainer1}>
+          <div className={style.img0}>
+            <img src={img0} alt="self service dog wash" />
+          </div>
+          <div className={style.img7}>
+            <img src={img7} alt="img" />
+          </div>
+        </div>
+      </section>
+      <section className={style.footerSection}>
+        <Footer />
+      </section>
+      <MenuModal pageName="" />
     </div>
   );
 };
