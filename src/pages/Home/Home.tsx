@@ -16,10 +16,10 @@ export const Home = () => {
             <div className={style.imgContainer}>
               <img src={logo} alt="logo" />
             </div>
-            <div className={style.titleInfo}>
+            {/* <div className={style.titleInfo}>
               <h1>The Royal Canine</h1>
               <p>Burlington, Wisconsin</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

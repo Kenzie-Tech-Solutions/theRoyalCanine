@@ -8,25 +8,36 @@
   margin: auto;
 }
 
+.heroContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -9999px;
+  left: -9999px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
 .heroSection {
   position: relative;
-  background-color: black;
   height: 850px;
   display: flex;
   flex-direction: column;
   margin: auto;
   animation: fadeIn 1s;
+
 }
 
 .heroSection::before {
   content:"";
-  background-color: black;
+  background-image: url("../../assets/dog-background-image.jpg");
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
+  right: -9999px;
   left: -9999px;
-  box-shadow: 9999px 0 0 black;
+  box-shadow: 9999px 0 0 url("../../assets/dog-background-image.jpg");
+  opacity: 0.5;
   z-index: -1;
 }
 
