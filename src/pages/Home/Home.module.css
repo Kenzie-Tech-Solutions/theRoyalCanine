@@ -6,6 +6,7 @@
   position: relative;
   max-width: 1200px;
   margin: auto;
+  animation: fadeIn 1s;
 }
 
 .heroContainer::before {
