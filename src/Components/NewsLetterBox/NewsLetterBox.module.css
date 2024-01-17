@@ -1,0 +1,51 @@
+.newsLetterBoxWrapper {
+    background-color: chartreuse;
+    margin: 10px;
+}
+
+.newsLetterBoxWrapper > div > h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.newsLetterBoxWrapper > div > p {
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.newsLetterForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.emailInput {
+  width: 90%;
+  height: 25px;
+  border-radius: 25px;
+  border: turquoise;
+  /* align-self: center; */
+  margin: 20px;
+}
+
+.emailSubmit {
+  width: 90%;
+  background-color: turquoise;
+  height: 25px;
+  border-radius: 25px;
+  border: turquoise;
+}
+
+@media (max-width: 1167px) {
+  .newsLetterBoxWrapper {
+    height: 350px;
+  }
+}
+
+
+
+
