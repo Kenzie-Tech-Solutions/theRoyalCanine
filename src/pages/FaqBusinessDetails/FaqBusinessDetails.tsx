@@ -11,8 +11,8 @@ export const FaqBusinessDetails = () => {
 
   return (
     <div className={styles.pageWrapper}>
+      <NavBar pageName="" />
       <div className={styles.heroSection}>
-        <NavBar pageName="" />
         <div className={styles.pageHeader}>
           <h1>BUSINESS DETAILS & FAQ</h1>
         </div>

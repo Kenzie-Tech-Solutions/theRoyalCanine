@@ -12,9 +12,9 @@ import { Carousel } from "../../Components/Carousel/Carsousel";
 
 export const PhotoGallery = () => {
   return (
-    <div>
+    <div className="photoGalleryWrapper">
+      <NavBar pageName="" />
       <div className={styles.heroWrapper}>
-        <NavBar pageName="" />
         <h1>Photo Gallery</h1>
       </div>
       <hr className={styles.hr} />

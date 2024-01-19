@@ -1,9 +1,10 @@
 .nav-bar {
-  margin: 25px auto;
+  margin: 0px auto 25px;
   width: 700px;
   animation: fadeIn 2s;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .hamburger-menu {
@@ -108,11 +109,11 @@
 
 .nav-link > a {
   text-decoration: none;
-  /* color: black */
+  color: white;
   font-family: Playfair Display;
   font-weight: 400;
   font-style: normal;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: .5em;
   text-transform: uppercase;
 } 

@@ -7,8 +7,8 @@ import styles from "./Events.module.css";
 export const Events = () => {
   return (
     <div>
+      <NavBar pageName="" />
       <div className={styles.heroSection}>
-        <NavBar pageName="" />
         <h1>Events</h1>
       </div>
       <div className={styles.eventsSection}>

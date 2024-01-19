@@ -6,6 +6,7 @@ import img3 from "../assets/image3.jpeg";
 import img4 from "../assets/image4.jpeg";
 import img5 from "../assets/image5.jpeg";
 import img6 from "../assets/image6.jpeg";
+// imported images
 
 export const imageArray = [
   {
