@@ -52,8 +52,9 @@ export const faqArray = [
     id: 5,
     question: "Pro-Tips",
     answer: [
-      "“Stop/Pause” is the bottom button on the row. Press it to stop the timer if necessary. Click any another button to re-start the cycle.",
-      "Some dogs are confused by the ramps and don’t want to use them. Entice them by holding a treat at the top of the ramp!",
+      "“Stop/Pause” is the bottom button on the row (lit up in red). Press it to stop the timer if necessary. Click any another button to re-start the cycle.",
+      "Some dogs don’t want to use the ramps. You can try to entice them by holding a treat at the top of the ramp! ",
+      "If you have a very large (and possibly strong willed) dog, a 2nd set of hands is suggested to help get them up the ramp and in the tub.",
       "Aprons are hanging toward the back of the shop. Feel free to use them to protect your clothing!",
       "When there is no street parking in front of the shop, we recommend looking in the Loop, the public lot behind the Loop, or the city parking garage.",
     ],

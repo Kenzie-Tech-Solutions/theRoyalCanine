@@ -1,5 +1,6 @@
 .pageBody {
   margin: auto;
+  /* background-color: rgba(0, 0, 0, .3); */
 }
 
 .heroContainer {
@@ -9,33 +10,48 @@
   animation: fadeIn 1s;
 }
 
-.heroContainer::before {
+.headerSection {
+  position: relative;
+  animation: fadeIn 1s;
+}
+
+.headerContainer {
+  position: relative;
+  animation: fadeIn 1s;
+}
+
+.headerContainer::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  right: -9999px;
+  /* right: -9999px; */
+  right: 0;
   left: -9999px;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .3);
+  z-index: -1;
 }
 
 .heroSection {
   position: relative;
-  height: 850px;
+  height: 725px;
   display: flex;
   flex-direction: column;
   margin: auto;
   animation: fadeIn 1s;
+  justify-content: center;
 
 }
 
-.heroSection::before {
+.headerSection::before {
   content:"";
   background-image: url("../../assets/dog-background-image.jpg");
   position: absolute;
   top: 0;
   bottom: 0;
-  right: -9999px;
+  right: 0;
+  right: 0;
+  /* right: -9999px; */
   left: -9999px;
   box-shadow: 9999px 0 0 url("../../assets/dog-background-image.jpg");
   opacity: 0.5;
@@ -63,10 +79,11 @@
 }
 
 .imgContainer > img {
-  width: 300px;
+  max-width: 500px;
   align-self: center;
   border-radius: 5%;
   margin-bottom: 25px;
+  /* filter: brightness(0) invert(1); */
 }
 
 
@@ -309,5 +326,17 @@ animation: fadeIn 1s;
   .img7 {
     margin-top: 20px;
     height: 800px;
+  }
+}
+
+@media (max-width: 500px) {
+  .imgContainer > img {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 500px) {
+  .imgContainer > img {
+    max-width: 300px;
   }
 }

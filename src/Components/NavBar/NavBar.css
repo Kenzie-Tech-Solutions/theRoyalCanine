@@ -2,6 +2,8 @@
   margin: 25px auto;
   width: 700px;
   animation: fadeIn 2s;
+  position: sticky;
+  top: 0;
 }
 
 .hamburger-menu {
@@ -10,9 +12,35 @@
 }
 
 .nav-bar-home {
-  margin: 25px auto 100px;
+  position: relative;
+  margin: 0px auto 0px;
   width: 550px;
   animation: fadeIn 2s;
+}
+
+.nav-section {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  animation: fadeIn 2s;
+}
+
+.nav-container {
+  position: relative;
+  z-index: 1;
+  animation: fadeIn 2s;
+}
+
+.nav-container::before { 
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0px;
+  left: -9999px;
+    justify-content: center;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: -1;
 }
 
 .nav-socials {
@@ -22,17 +50,30 @@
   height: 50px;
   align-items: center;
   /* background-color: darkcyan; */
-  border-radius: 10px;
+  /* border-radius: 10px; */
+} 
+
+.nav-section::before {
+  content:"";
+  background-image: url("../../assets/dog-background-image.jpg");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0px;
+  left: -9999px; 
+  box-shadow: 9999px 0 0 url("../../assets/dog-background-image.jpg"); 
+  opacity: 0.5; 
+  z-index: -1;
 }
 
 .nav-socials > div > p {
-  color: white;
-  font-size: 14px;
+  color: black;
+  font-size: 18px;
 }
 
 .nav-social-icon {
-  color: white;
-  font-size: 14px;
+  color: black;
+  font-size: 18px;
   cursor: pointer;
   margin: 0 5px;
 }
@@ -49,19 +90,20 @@
 .flex > li {
   margin: 0 10px;
   list-style: none;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   cursor: pointer;
 }
 
 .nav-link-home > a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .nav-link-home > a:hover {
   color: #7070de;
-}
+  /* color: ; */
+} 
 
 .nav-link > a {
   text-decoration: none;
@@ -72,29 +114,31 @@
   font-size: 10px;
   letter-spacing: .5em;
   text-transform: uppercase;
-}
+} 
 
 .nav-link > a:hover {
   color: #7070de;
-}
+} 
 
 @media (max-width: 700px) {
   .nav-bar-home {
     width: 100%;
+
   }
 
   .nav-bar {
     width: 100%;
   }
 
-  .flex {
+  .flex, .nav-socials {
     flex-wrap: wrap;
     display: none;
+    
   }
 
   .hamburger-div {
     position: relative;
-    height: 30px;
+    /* height: 30px; */
   }
 
   .hamburger-menu {
@@ -128,4 +172,4 @@
   100% {
     opacity: 1;
   }
-}
+} 

@@ -1,6 +1,7 @@
 import { NavBar } from "../../Components/NavBar/NavBar";
 import style from "./Home.module.css";
-import logo from "../../assets/logo.jpg";
+// import logo from "../../assets/logo.jpg";
+import logo1 from "../../assets/logo1.png";
 import { MenuModal } from "../../Components/MenuModal/MenuModal";
 import img0 from "../../assets/image0.jpeg";
 import img7 from "../../assets/image7.jpeg";
@@ -12,17 +13,19 @@ import { NewsLetterBox } from "../../Components/NewsLetterBox/NewsLetterBox";
 export const Home = () => {
   return (
     <div className={style.pageBody}>
+      <NavBar pageName={"home"} />
       <section className={style.headerSection}>
-        <div className={style.heroContainer}>
-          <div className={style.heroSection}>
-            <NavBar pageName={"home"} />
-            <div className={style.imgContainer}>
-              <img src={logo} alt="logo" />
-            </div>
-            {/* <div className={style.titleInfo}>
+        <div className={style.headerContainer}>
+          <div className={style.heroContainer}>
+            <div className={style.heroSection}>
+              <div className={style.imgContainer}>
+                <img src={logo1} alt="logo" />
+              </div>
+              {/* <div className={style.titleInfo}>
               <h1>The Royal Canine</h1>
               <p>Burlington, Wisconsin</p>
             </div> */}
+            </div>
           </div>
         </div>
       </section>
@@ -65,7 +68,7 @@ export const Home = () => {
           <NewsLetterBox />
         </div>
       </section>
-      <section className={style.contactInfoSection}>
+      <section id="contactInfo" className={style.contactInfoSection}>
         <div className={style.contactInfoContainer}>
           <div className={style.contactInfo}>
             <h2>CONTACT INFO</h2>
