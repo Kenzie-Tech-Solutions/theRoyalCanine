@@ -9,6 +9,7 @@ import { Footer } from "../../Components/Footer/Footer";
 import { ContactBox } from "../../Components/ContactBox/ContactBox";
 import { ComeVisitBox } from "../../Components/ComeVisitBox/ComeVisitBox";
 import { NewsLetterBox } from "../../Components/NewsLetterBox/NewsLetterBox";
+import { ElfsightWidget } from "react-elfsight-widget";
 
 export const Home = () => {
   return (
@@ -98,6 +99,9 @@ export const Home = () => {
             <img src={img7} alt="img" />
           </div>
         </div>
+      </section>
+      <section>
+        <ElfsightWidget widgetId="24db4c92-bd75-4b16-a33d-728298076354" />
       </section>
       <section className={style.footerSection}>
         <Footer />
