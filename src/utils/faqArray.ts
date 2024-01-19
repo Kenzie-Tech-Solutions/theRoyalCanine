@@ -1,7 +1,7 @@
 export const faqArray = [
   {
     id: 0,
-    question: "Payment at the Machine",
+    question: "PAYMENT AT THE MACHINE:",
     answer: [
       "Payment can be made with cash (exact change only), prepaid wash tokens, card or “touch to pay” at the terminals on the machines.",
       "A $15 wash MUST be purchased to start the wash cycle. (If less than 15 minutes is purchased to start, the machine will not activate. If this happens, add & pay for additional time in 3-minute increments until 15 minutes is reached – then the wash will start.)",
@@ -10,7 +10,7 @@ export const faqArray = [
   },
   {
     id: 1,
-    question: "Tub “Disinfect” Feature",
+    question: "TUB “DISINFECT” FEATURE:",
     answer: [
       "The wash tubs can be sanitized before each use, but pups should NOT be inside during.",
       "Upon payment, a message on the screen will ask if you would like to disinfect. Click “Yes/Disinfect”. (Green button/2nd from bottom) Confirm your dog is out of the tub and click “Yes” again. This does not count towards your wash time.",
@@ -20,11 +20,11 @@ export const faqArray = [
   },
   {
     id: 2,
-    question: "Bathing in the Tubs",
+    question: "BATHING YOUR PET IN OUR TUBS:",
     answer: [
       "The water temperature is not adjustable but has been pre-set to a safe and comfortable temperature.",
       "There are chains at either end of the tubs that can be attached to a collar. Alternatively, there are black nylon choke collars attached to the chains that may be used instead.",
-      "Work down the row of buttons through the cycle. They do not progress to the next automatically – they need to be pressed manually.",
+      "Work down the row of buttons through the cycle. They do not progress to the next automatically and will need to be pressed manually to move on.",
       "The liquids are metered and come out through the hose nozzle at the correct ratio. If no water is coming out of the hose, press the silver button on the sprayer to turn it on.",
       "The spray pattern can be changed (if the power is too strong or weak) by rotating the end of the sprayer nozzle.",
       "You can choose to use “regular” shampoo, “fleawash” (also a shampoo), or both.",
@@ -34,23 +34,24 @@ export const faqArray = [
   },
   {
     id: 3,
-    question: "Dryers/Towels",
+    question: "DRYERS/TOWELS:",
     answer: [
       "The dryers make some dogs anxious. Stay close to prevent them from jumping out of the tubs.",
-      "Our “happy hoodies” and CBD treats are a HUGE help in calming them during drying!",
       "Please only use ONE towel per paid wash and place it in the “dirty” laundry bin after.",
+      "Towel drying your dog by hand after washing (but before drying) will help cut down on the amount of dryer time needed. (Paws get especially wet and are hard to get with the dryer so don’t forgot to towel dry them well also!)",
+      "Our “happy hoodies” and CBD treats are VERY helpful in calming your pup during drying (and in many other situations)!",
     ],
   },
   {
     id: 4,
-    question: "Retail",
+    question: "RETAIL:",
     answer: [
       "If no attendant is present and you would like to purchase any retail products or wash tokens/packages, please call or text 262-273-2961 and we will do our best to meet you ASAP.",
     ],
   },
   {
     id: 5,
-    question: "Pro-Tips",
+    question: "PRO-TIPS:",
     answer: [
       "“Stop/Pause” is the bottom button on the row (lit up in red). Press it to stop the timer if necessary. Click any another button to re-start the cycle.",
       "Some dogs don’t want to use the ramps. You can try to entice them by holding a treat at the top of the ramp! ",
