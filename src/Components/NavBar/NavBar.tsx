@@ -38,7 +38,12 @@ export const NavBar = ({ pageName }: NavBarProps) => {
             <div>
               <p>
                 Contact us:
-                <HashLink smooth to="#contactInfo">
+                <HashLink
+                  smooth
+                  to={`${
+                    pageName !== "home" ? "/#contactInfo" : "#contactInfo"
+                  }`}
+                >
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     className="nav-social-icon"
