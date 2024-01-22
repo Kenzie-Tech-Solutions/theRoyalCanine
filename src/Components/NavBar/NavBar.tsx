@@ -6,6 +6,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { useImgContext } from "../../providers/imgContext/imgContext";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { HashLink } from "react-router-hash-link";
 
 library.add(faBars);
 
@@ -37,10 +38,12 @@ export const NavBar = ({ pageName }: NavBarProps) => {
             <div>
               <p>
                 Contact us:
-                <FontAwesomeIcon
-                  icon={faEnvelope}
-                  className="nav-social-icon"
-                />
+                <HashLink smooth to="#contactInfo">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className="nav-social-icon"
+                  />
+                </HashLink>
               </p>
             </div>
           </div>
