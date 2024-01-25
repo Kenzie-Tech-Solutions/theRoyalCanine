@@ -24,14 +24,18 @@ export const NavBar = ({ pageName }: NavBarProps) => {
           <div className="nav-socials">
             <div>
               <p>
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  className="nav-social-icon"
-                />
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  className="nav-social-icon"
-                />
+                <a href="https://www.facebook.com/profile.php?id=100092557327256">
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    className="nav-social-icon"
+                  />
+                </a>
+                <a href="https://www.instagram.com/theroyalcanine53105">
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="nav-social-icon"
+                  />
+                </a>
                 Follow us!
               </p>
             </div>
