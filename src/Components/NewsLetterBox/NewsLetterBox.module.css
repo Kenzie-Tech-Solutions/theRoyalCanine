@@ -1,17 +1,17 @@
 .newsLetterBoxWrapper {
-    background-color: chartreuse;
+    background-color: tan;
     margin: 10px;
 }
 
 .newsLetterBoxWrapper > div > h2 {
     text-align: center;
-    color: #ffffff;
+    color: black;
     font-size: 30px;
 }
 
 .newsLetterBoxWrapper > div > p {
     text-align: center;
-    color: white;
+    color: black;
     width: 80%;
     margin: auto;
     font-size: 20px;

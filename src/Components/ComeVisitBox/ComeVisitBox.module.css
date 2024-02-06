@@ -1,5 +1,6 @@
 .ComeVisitBoxWrapper {
-  background-image: url("../../assets/image4.jpeg");
+  /* background-image: url("../../assets/image4.jpeg"); */
+  background-color: teal;
   background-size: cover;
   background-position: center;
   max-width: 350px;
@@ -7,10 +8,10 @@
 
 }
 
-.boxContents {
+/* .boxContents {
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
-}
+} */
 
 .wordContent {
   padding: 20px;
@@ -26,7 +27,7 @@
 
 .wordContent > h2 {
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .contactInfo {
@@ -39,10 +40,10 @@
   text-align: center;
   font-size: 35px;
   margin-right: 50px;
-  color: white;
+  color: black;
 }
 
 .contactInfo > p {
   margin: 0;
-  color: white;
+  color: black;
 }
