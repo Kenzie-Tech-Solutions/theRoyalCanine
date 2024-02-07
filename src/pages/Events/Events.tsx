@@ -6,21 +6,23 @@ import styles from "./Events.module.css";
 
 export const Events = () => {
   return (
-    <div>
-      <div className={styles.heroSection}>
-        <NavBar pageName="" />
-        <h1>Events</h1>
-      </div>
-      <div className={styles.eventsSection}>
-        {eventDetails.map((event) => {
-          return (
-            <div key={event.date} className={styles.eventCard}>
-              <p>Date: {event.date}</p>
-              <h3>{event.title}</h3>
-              <p>{event.details}</p>
-            </div>
-          );
-        })}
+    <div className={styles.pageContainer}>
+      <NavBar pageName="" />
+      <div className={styles.content}>
+        <div className={styles.heroSection}>
+          <h1>Events</h1>
+        </div>
+        <div className={styles.eventsSection}>
+          {eventDetails.map((event) => {
+            return (
+              <div key={event.date} className={styles.eventCard}>
+                <p>Date: {event.date}</p>
+                <h3>{event.title}</h3>
+                <p>{event.details}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
       <MenuModal pageName="" />
       <Footer />

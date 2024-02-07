@@ -1,0 +1,35 @@
+.contactUsBox {
+  background-color: grey;
+  margin: 10px;
+}
+
+.contactPiece{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.contactUsBox > div > h2 {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+} 
+
+.contactPiece > p {
+  margin: 0;
+  color: black;
+} 
+
+.contactPiece > div {
+  width: 50px;
+  text-align: center;
+  font-size: 35px;
+  margin-right: 100px;
+  color: black;
+}
+
+.contactPiece > div > hr {
+  margin: 0;
+  color: black;
+}
