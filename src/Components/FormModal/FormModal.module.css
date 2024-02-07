@@ -1,0 +1,83 @@
+.modalWrapper {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 1rem;
+    visibility: hidden;
+    opacity: 0;
+    background-color: white;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+    cursor: pointer;
+  
+  }
+  
+  .btnDiv {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+  }
+  
+  .faTimes {cursor: pointer;}
+  
+  .modalDialog {
+    max-width: 800px;
+    max-height: 80vh;
+    background: #fff;
+    color: #161c2d;
+    overflow: hidden;
+    padding: 1.25rem 1.85rem;
+    border-radius: 5px;
+    cursor: default;
+    overflow-y: auto;
+  }
+  
+  .isVisible {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 2px 5px white;
+    border-radius: 5px;
+    width: 800px;
+  }
+  
+  .contactInfo > h2 {
+    font-size: 35px;
+  }
+  
+  .contactInfo > div {
+    width: 50%;
+  }
+  
+  .contactInfo > div > form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contactInfo > div > form > input, .contactInfo > div > form > textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+  .submitBtn {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+  }

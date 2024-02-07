@@ -10,6 +10,7 @@ import { ContactBox } from "../../Components/ContactBox/ContactBox";
 import { ComeVisitBox } from "../../Components/ComeVisitBox/ComeVisitBox";
 import { NewsLetterBox } from "../../Components/NewsLetterBox/NewsLetterBox";
 import { ElfsightWidget } from "react-elfsight-widget";
+import { FormModal } from "../../Components/FormModal/FormModal";
 
 export const Home = () => {
   return (
@@ -107,6 +108,7 @@ export const Home = () => {
         <Footer />
       </section>
       <MenuModal pageName="" />
+      <FormModal />
     </div>
   );
 };
