@@ -19,21 +19,37 @@ export const NavBar = ({ pageName }: NavBarProps) => {
 
   return (
     <section className="nav-section">
-      <div className="nav-container">
+      <div
+        className={`${
+          pageName !== "home" ? "nav-container" : "nav-container-home"
+        }`}
+      >
         <div className={`${pageName !== "home" ? "nav-bar" : "nav-bar-home"}`}>
-          <div className="nav-socials">
+          <div
+            className={`${
+              pageName !== "home" ? "nav-socials" : "nav-socials-home"
+            }`}
+          >
             <div>
               <p>
                 <a href="https://www.facebook.com/profile.php?id=100092557327256">
                   <FontAwesomeIcon
                     icon={faFacebook}
-                    className="nav-social-icon"
+                    className={`${
+                      pageName !== "home"
+                        ? "nav-social-icon"
+                        : "nav-social-icon-home"
+                    }`}
                   />
                 </a>
                 <a href="https://www.instagram.com/theroyalcanine53105">
                   <FontAwesomeIcon
                     icon={faInstagram}
-                    className="nav-social-icon"
+                    className={`${
+                      pageName !== "home"
+                        ? "nav-social-icon"
+                        : "nav-social-icon-home"
+                    }`}
                   />
                 </a>
                 Follow us!
@@ -50,7 +66,11 @@ export const NavBar = ({ pageName }: NavBarProps) => {
                 >
                   <FontAwesomeIcon
                     icon={faEnvelope}
-                    className="nav-social-icon"
+                    className={`${
+                      pageName !== "home"
+                        ? "nav-social-icon"
+                        : "nav-social-icon-home"
+                    }`}
                   />
                 </HashLink>
               </p>
