@@ -52,12 +52,12 @@ export const NavBar = ({ pageName }: NavBarProps) => {
                     }`}
                   />
                 </a>
-                Follow us!
+                Follow Us:
               </p>
             </div>
             <div>
               <p>
-                Contact us:
+                Contact Us:
                 <HashLink
                   smooth
                   to={`${

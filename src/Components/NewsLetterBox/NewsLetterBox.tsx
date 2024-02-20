@@ -7,14 +7,14 @@ export const NewsLetterBox = () => {
         <h2>Newsletter</h2>
       </div>
       <div>
-        <p>Subscribe to our Newsletter and stay connected</p>
+        <p>"Subscribe to our newsletter and stay connected."</p>
       </div>
       <div>
         <form className={styles.newsLetterForm}>
           <input
             className={styles.emailInput}
             type="text"
-            placeholder="Email Address"
+            placeholder=" Email Address"
           />
           <input
             className={styles.emailSubmit}

@@ -12,30 +12,26 @@ export const ContactBox = () => {
       <div className={styles.contactPiece}>
         <div>
           <FontAwesomeIcon icon={faPhone} />
-          <hr />
         </div>
-        <p>123 456 7890</p>
+        <p>262.273.2961</p>
       </div>
       <div className={styles.contactPiece}>
         <div>
           <FontAwesomeIcon icon={faEnvelope} />
-          <hr />
         </div>
-        <p>Email Us</p>
+        <p>theroalcanine53105@gmail.com</p>
       </div>
       <div className={styles.contactPiece}>
         <div>
           <FontAwesomeIcon icon={faFacebook} />
-          <hr />
         </div>
-        <p>visit us on Facebook</p>
+        <p>Visit us on Facebook</p>
       </div>
       <div className={styles.contactPiece}>
         <div>
           <FontAwesomeIcon icon={faInstagram} />
-          <hr />
         </div>
-        <p>visit us on Instagram</p>
+        <p>Visit us on Instagram</p>
       </div>
     </div>
   );

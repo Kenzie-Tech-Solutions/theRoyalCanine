@@ -56,7 +56,7 @@ export const FaqBusinessDetails = () => {
         </p>
         <hr />
         <div className={styles.faqSection}>
-          <h2>FAQ</h2>
+          <h2>FAQs</h2>
           <div className={styles.faqQuestionWrapper}>
             {faqArray.map((faq) => (
               <div
