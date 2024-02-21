@@ -8,18 +8,16 @@ export const ComeVisitBox = () => {
     <div className={styles.ComeVisitBoxWrapper}>
       <div className={styles.boxContents}>
         <div className={styles.wordContent}>
-          <h2>Come Visit Us</h2>
+          <h2>Visit Us</h2>
           <div className={styles.contactInfo}>
             <div>
               <FontAwesomeIcon icon={faLocationDot} />
-              <hr />
             </div>
             <p>525 N. Pine St. Burlington, WI 53105</p>
           </div>
-          <div className={styles.contactInfo}>
+          <div className={styles.clockIcon}>
             <div>
               <FontAwesomeIcon icon={faClock} />
-              <hr />
             </div>
             <p>8 am - 8 pm, 7 days a week</p>
           </div>

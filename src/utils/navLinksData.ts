@@ -5,7 +5,7 @@ export const navLinksData = [
   },
   {
     to: "/faqBusinessDetails",
-    label: "Dirty Details/FAQ",
+    label: "FAQs",
   },
   {
     to: "/photoGallery",
