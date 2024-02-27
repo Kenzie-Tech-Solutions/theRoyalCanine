@@ -1,6 +1,7 @@
 .contactUsBox {
   background-color: grey;
   margin: 10px;
+  max-width: 400px;
 }
 
 .contactPiece{
@@ -22,10 +23,8 @@
 } 
 
 .contactPiece > div {
-  width: 50px;
-  text-align: center;
   font-size: 35px;
-  margin-right: 100px;
+  margin-right: 35px;
   color: black;
 }
 

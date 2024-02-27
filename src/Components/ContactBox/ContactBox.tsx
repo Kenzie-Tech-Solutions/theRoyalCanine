@@ -19,7 +19,7 @@ export const ContactBox = () => {
         <div>
           <FontAwesomeIcon icon={faEnvelope} />
         </div>
-        <p>theroalcanine53105@gmail.com</p>
+        <p>theroyalcanine53105@gmail.com</p>
       </div>
       <div className={styles.contactPiece}>
         <div>
