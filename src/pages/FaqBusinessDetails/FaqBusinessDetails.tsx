@@ -19,9 +19,8 @@ export const FaqBusinessDetails = () => {
       </div>
 
       <div className={styles.businessDetails}>
-        <h2>BUSINESS DETAILS</h2>
         <div>
-          <h3>ABOUT US</h3>
+          <h2>ABOUT US</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
             eligendi enim magni nesciunt atque nam nemo natus unde ea quis, quae

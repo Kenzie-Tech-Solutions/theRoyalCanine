@@ -141,7 +141,6 @@
   font-style: normal;
   font-size: 12px;
   letter-spacing: .5em;
-  text-transform: uppercase;
 } 
 
 .nav-link > a:hover {
@@ -198,6 +197,15 @@
   .hide {
     display: none;
     
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-socials-home {
+    flex-direction: column;
+    height: fit-content;
+    background: white;
+    margin: 0;
   }
 }
 
