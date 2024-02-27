@@ -7,7 +7,7 @@ export const NewsLetterBox = () => {
         <h2>Newsletter</h2>
       </div>
       <div>
-        <p>Subscribe to our newsletter and stay connected.</p>
+        <p>Subscribe to our newsletter and stay connected!</p>
       </div>
       <div>
         <form className={styles.newsLetterForm}>

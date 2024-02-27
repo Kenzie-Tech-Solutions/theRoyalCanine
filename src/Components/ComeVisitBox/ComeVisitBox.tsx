@@ -23,8 +23,8 @@ export const ComeVisitBox = () => {
           </div>
           <div className={styles.contactInfo}>
             <p>
-              *Hours subject to change. Please follow us on social media for any
-              updates.
+              Please follow us on social media for any closures or changes to
+              our hours.
             </p>
           </div>
         </div>

@@ -37,7 +37,7 @@ export const Home = () => {
       <section id="contactInfo" className={style.contactInfoSection}>
         <div className={style.contactInfoContainer}>
           <div className={style.contactInfo}>
-            <h2>CONTACT INFO</h2>
+            <h2>MESSAGE US.</h2>
             <div>
               <form action="link-to-get-form.io">
                 <input type="text" placeholder="name"></input>
