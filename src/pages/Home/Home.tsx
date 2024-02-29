@@ -23,47 +23,11 @@ export const Home = () => {
               <div className={style.imgContainer}>
                 <img src={logo1} alt="logo" />
               </div>
-              {/* <div className={style.titleInfo}>
-              <h1>The Royal Canine</h1>
-              <p>Burlington, Wisconsin</p>
-            </div> */}
             </div>
           </div>
         </div>
       </section>
       <section className={style.infoSection}>
-        {/* <div className={style.basicInformationContainer}>
-          <div className={style.basicInfoSection}>
-            <h2>Heading</h2>
-            <div className={style.businessDetails}>
-              <div>
-                <h3>Hours</h3>
-                <p>8 am - 8 pm</p>
-                <p>7 days a week</p>
-              </div>
-              <div>
-                <h3>Location</h3>
-                <p>525 N. Pine St.</p>
-                <p>Burlington, WI 53105</p>
-              </div>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              eligendi enim magni nesciunt atque nam nemo natus unde ea quis,
-              quae itaque dolores, rem totam accusantium beatae explicabo quos
-              quod! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repellat eligendi enim magni nesciunt atque nam nemo natus unde ea
-              quis, quae itaque dolores, rem totam accusantium beatae explicabo
-              quos quod! Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Repellat eligendi enim magni nesciunt atque nam nemo natus
-              unde ea quis, quae itaque dolores, rem totam accusantium beatae
-              explicabo quos quod! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Repellat eligendi enim magni nesciunt atque nam
-              nemo natus unde ea quis, quae itaque dolores, rem totam
-              accusantium beatae explicabo quos quod! Lorem ipsum dolor sit amet
-            </p>
-          </div>
-        </div> */}
         <div className={style.infoSectionContainer}>
           <ContactBox />
           <ComeVisitBox />
@@ -73,7 +37,7 @@ export const Home = () => {
       <section id="contactInfo" className={style.contactInfoSection}>
         <div className={style.contactInfoContainer}>
           <div className={style.contactInfo}>
-            <h2>CONTACT INFO</h2>
+            <h2>MESSAGE US.</h2>
             <div>
               <form action="link-to-get-form.io">
                 <input type="text" placeholder="name"></input>

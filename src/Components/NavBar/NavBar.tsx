@@ -3,10 +3,13 @@ import "./NavBar.css";
 import { navLinksData } from "../../utils/navLinksData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faEnvelope,
+  faPhoneAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { useImgContext } from "../../providers/imgContext/imgContext";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { HashLink } from "react-router-hash-link";
 
 library.add(faBars);
 
@@ -32,6 +35,7 @@ export const NavBar = ({ pageName }: NavBarProps) => {
           >
             <div>
               <p>
+                Follow Us:
                 <a href="https://www.facebook.com/profile.php?id=100092557327256">
                   <FontAwesomeIcon
                     icon={faFacebook}
@@ -52,12 +56,37 @@ export const NavBar = ({ pageName }: NavBarProps) => {
                     }`}
                   />
                 </a>
-                Follow Us:
               </p>
             </div>
             <div>
               <p>
-                Contact Us:
+                Email Us:
+                <a href="mailto:theroyalcanine53105@gmail.com">
+                  <FontAwesomeIcon
+                    icon={faEnvelope}
+                    className={`${
+                      pageName !== "home"
+                        ? "nav-social-icon"
+                        : "nav-social-icon-home"
+                    }`}
+                  />
+                </a>{" "}
+                Call Us:
+                <a href="tel:1262.273.2961">
+                  <FontAwesomeIcon
+                    icon={faPhoneAlt}
+                    className={`${
+                      pageName !== "home"
+                        ? "nav-social-icon"
+                        : "nav-social-icon-home"
+                    }`}
+                  />
+                </a>
+              </p>
+            </div>
+            {/* <div>
+              <p>
+                Email Us:
                 <HashLink
                   smooth
                   to={`${
@@ -74,7 +103,7 @@ export const NavBar = ({ pageName }: NavBarProps) => {
                   />
                 </HashLink>
               </p>
-            </div>
+            </div> */}
           </div>
           <nav className="nav-tag">
             <div className="hamburger-div">

@@ -14,14 +14,13 @@ export const FaqBusinessDetails = () => {
       <NavBar pageName="" />
       <div className={styles.heroSection}>
         <div className={styles.pageHeader}>
-          <h1>BUSINESS DETAILS & FAQ</h1>
+          <h1>BUSINESS DETAILS & FAQs</h1>
         </div>
       </div>
 
       <div className={styles.businessDetails}>
-        <h2>BUSINESS DETAILS</h2>
         <div>
-          <h3>ABOUT US</h3>
+          <h2>ABOUT US</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
             eligendi enim magni nesciunt atque nam nemo natus unde ea quis, quae
@@ -34,8 +33,8 @@ export const FaqBusinessDetails = () => {
             <h3>BUSINESS HOURS</h3>
             <p>8:00 AM - 8:00 PM / 7 days a week</p>
             <p>
-              Please follow us on Facebook for any closures or changes to our
-              hours.
+              Please follow us on social media for any closures or changes to
+              our hours.
             </p>
           </div>
           <div>
@@ -46,7 +45,7 @@ export const FaqBusinessDetails = () => {
           <div>
             <h3>CONTACT INFORMATION</h3>
             <p>PHONE: 262.273.2961</p>
-            <p>EMAIL: theroalcanine53105@gmail.com</p>
+            <p>EMAIL: theroyalcanine53105@gmail.com</p>
           </div>
         </div>
         <p>

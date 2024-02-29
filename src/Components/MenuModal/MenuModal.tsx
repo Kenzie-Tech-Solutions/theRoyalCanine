@@ -17,7 +17,6 @@ export const MenuModal = ({ pageName }: { pageName: string }) => {
     if (navModalClose) {
       navModalClose();
     }
-    console.log(path);
     navigate(path);
   };
   return (
@@ -29,7 +28,6 @@ export const MenuModal = ({ pageName }: { pageName: string }) => {
             key={link.label}
           >
             <a onClick={() => handleLinkClick(link.to)}>{link.label}</a>
-            {/* <Link to={link.to}>{link.label}</Link> */}
           </li>
         ))}
       </ul>

@@ -40,8 +40,6 @@
   right: 0px;
   left: -9999px;
   justify-content: center;
-  /* background-color: rgba(0, 0, 0, .3); */
-  /* background-color: rgba(0, 0, 0, .3); */
   background-color: rgb(255, 255, 255);
   z-index: -1;
 }
@@ -54,9 +52,6 @@
   right: 0px;
   left: -9999px;
   justify-content: center;
-  /* background-color: rgba(0, 0, 0, .3); */
-  /* background-color: rgba(0, 0, 0, .3); */
-  /* background-color: rgb(255, 255, 255); */
   z-index: -1;
 }
 
@@ -66,8 +61,6 @@
   margin: 0px;
   height: 50px;
   align-items: center;
-  /* background-color: darkcyan; */
-  /* border-radius: 10px; */
 } 
 
 .nav-socials-home {
@@ -76,20 +69,16 @@
   margin: 0px;
   height: 50px;
   align-items: center;
-  /* background-color: darkcyan; */
-  /* border-radius: 10px; */
 } 
 
 .nav-section::before {
   content:"";
-  /* background-image: url("../../assets/dog-background-image.jpg"); */
   background-color: black;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0px;
   left: -9999px; 
-  /* box-shadow: 9999px 0 0 url("../../assets/dog-background-image.jpg");  */
   opacity: 0.5; 
   z-index: -1;
 }
@@ -142,7 +131,6 @@
 
 .nav-link-home > a:hover {
   color: #7070de;
-  /* color: black; */
 } 
 
 .nav-link > a {
@@ -153,7 +141,6 @@
   font-style: normal;
   font-size: 12px;
   letter-spacing: .5em;
-  text-transform: uppercase;
 } 
 
 .nav-link > a:hover {
@@ -162,6 +149,13 @@
 } 
 
 @media (max-width: 700px) {
+  .nav-section {
+    height: 60px;
+  }
+
+  .nav-section::before {
+    background-color: white;
+  }
   .nav-bar-home {
     width: 100%;
 
@@ -174,12 +168,17 @@
   .flex, .nav-socials {
     flex-wrap: wrap;
     display: none;
-    
+  }
+
+  .nav-socials-home {
+    margin: 0 20px;
   }
 
   .hamburger-div {
     position: relative;
-    /* height: 30px; */
+    height: 60px;
+    background-color: rgba(0, 0, 0, .3);
+
   }
 
   .hamburger-menu {
@@ -198,6 +197,15 @@
   .hide {
     display: none;
     
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-socials-home {
+    flex-direction: column;
+    height: fit-content;
+    background: white;
+    margin: 0;
   }
 }
 

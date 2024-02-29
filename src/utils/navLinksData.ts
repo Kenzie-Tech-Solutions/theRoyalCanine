@@ -1,7 +1,7 @@
 export const navLinksData = [
   {
     to: "/",
-    label: "Home",
+    label: "HOME",
   },
   {
     to: "/faqBusinessDetails",
@@ -9,10 +9,10 @@ export const navLinksData = [
   },
   {
     to: "/photoGallery",
-    label: "Photo Gallery",
+    label: "PHOTO GALLERY",
   },
   {
     to: "/events",
-    label: "Events",
+    label: "EVENTS",
   },
 ];
