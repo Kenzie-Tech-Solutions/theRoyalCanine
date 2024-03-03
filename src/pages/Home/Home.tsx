@@ -37,7 +37,7 @@ export const Home = () => {
       <section id="contactInfo" className={style.contactInfoSection}>
         <div className={style.contactInfoContainer}>
           <div className={style.contactInfo}>
-            <h2>Message Us</h2>
+            <h2>message us</h2>
             <div>
               <form action="https://getform.io/f/paynlwwb" method="POST">
                 <input name="name" type="text" placeholder="name"></input>
