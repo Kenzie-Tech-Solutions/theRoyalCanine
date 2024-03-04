@@ -27,6 +27,11 @@ body p {
   text-align: center;
 }
 
+.aboutUsPar {
+  width: 80%;
+  margin: auto;
+}
+
 .businessDetails {
   width: 90%;
   margin: auto;
@@ -64,6 +69,25 @@ body p {
   letter-spacing: .015em;
   line-height: 2.3em;
   font-weight: 300;
+}
+
+.howToDiv {
+  text-align: center;
+  margin: 50px 0px;
+
+}
+
+.howToTag {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 20px 50px;
+  background-color: #eee;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.howToTag:hover {
+  background-color: #ccc;
 }
 
 .faqSection {

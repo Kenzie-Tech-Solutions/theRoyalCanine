@@ -37,14 +37,20 @@ export const Home = () => {
       <section id="contactInfo" className={style.contactInfoSection}>
         <div className={style.contactInfoContainer}>
           <div className={style.contactInfo}>
-            <h2>MESSAGE US.</h2>
+            <h2>message us</h2>
             <div>
-              <form action="link-to-get-form.io">
-                <input type="text" placeholder="name"></input>
-                <input type="email" placeholder="email"></input>
-                <input type="tel" placeholder="phone"></input>
-                <textarea placeholder="message" cols={10} rows={5}></textarea>
+              <form action="https://getform.io/f/paynlwwb" method="POST">
+                <input name="name" type="text" placeholder="name"></input>
+                <input name="email" type="email" placeholder="email"></input>
+                <input name="phone" type="tel" placeholder="phone"></input>
+                <textarea
+                  name="message"
+                  placeholder="message"
+                  cols={10}
+                  rows={5}
+                ></textarea>
                 <input
+                  name="submit"
                   className={style.submitBtn}
                   type="submit"
                   value="submit"

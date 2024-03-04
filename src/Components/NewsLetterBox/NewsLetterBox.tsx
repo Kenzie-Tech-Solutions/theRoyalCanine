@@ -10,13 +10,19 @@ export const NewsLetterBox = () => {
         <p>Subscribe to our newsletter and stay connected!</p>
       </div>
       <div>
-        <form className={styles.newsLetterForm}>
+        <form
+          className={styles.newsLetterForm}
+          action="https://getform.io/f/zazomrpb"
+          method="POST"
+        >
           <input
+            name="email"
             className={styles.emailInput}
             type="text"
             placeholder=" Email Address"
           />
           <input
+            name="submit"
             className={styles.emailSubmit}
             type="submit"
             value="Subscribe"

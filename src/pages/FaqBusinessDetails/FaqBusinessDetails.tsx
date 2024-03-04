@@ -5,6 +5,7 @@ import { MenuModal } from "../../Components/MenuModal/MenuModal";
 import { AnswerModal } from "../../Components/AnswerModal/AnswerModal";
 import { useImgContext } from "../../providers/imgContext/imgContext";
 import { Footer } from "../../Components/Footer/Footer";
+import { aboutUs } from "../../utils/aboutUsPar";
 
 export const FaqBusinessDetails = () => {
   const { answerModalOpen } = useImgContext();
@@ -21,11 +22,11 @@ export const FaqBusinessDetails = () => {
       <div className={styles.businessDetails}>
         <div>
           <h2>ABOUT US</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            eligendi enim magni nesciunt atque nam nemo natus unde ea quis, quae
-            itaque dolores, rem totam accusantium beatae explicabo quos quod!
-          </p>
+          <div className={styles.aboutUsPar}>
+            {aboutUs.map((par) => (
+              <p key={par.p}>{par.p}</p>
+            ))}
+          </div>
           <hr />
         </div>
         <div className={styles.businessInfo}>
@@ -48,11 +49,11 @@ export const FaqBusinessDetails = () => {
             <p>EMAIL: theroyalcanine53105@gmail.com</p>
           </div>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-          eligendi enim magni nesciunt atque nam nemo natus unde ea quis, quae
-          itaque dolores, rem totam accusantium beatae explicabo quos quod!
-        </p>
+        <div className={styles.howToDiv}>
+          <a href="/new tab" className={styles.howToTag}>
+            How to
+          </a>
+        </div>
         <hr />
         <div className={styles.faqSection}>
           <h2>FAQs</h2>
