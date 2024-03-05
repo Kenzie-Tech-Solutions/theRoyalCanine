@@ -1,6 +1,5 @@
 import { NavBar } from "../../Components/NavBar/NavBar";
 import style from "./Home.module.css";
-// import logo from "../../assets/logo.jpg";
 import logo1 from "../../assets/logo1.png";
 import { MenuModal } from "../../Components/MenuModal/MenuModal";
 import img0 from "../../assets/image0.jpeg";
@@ -37,7 +36,7 @@ export const Home = () => {
       <section id="contactInfo" className={style.contactInfoSection}>
         <div className={style.contactInfoContainer}>
           <div className={style.contactInfo}>
-            <h2>message us</h2>
+            <h2>Message Us</h2>
             <div>
               <form action="https://getform.io/f/paynlwwb" method="POST">
                 <input name="name" type="text" placeholder="name"></input>

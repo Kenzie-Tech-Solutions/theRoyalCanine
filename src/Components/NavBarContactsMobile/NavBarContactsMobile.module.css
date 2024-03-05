@@ -1,0 +1,9 @@
+.contactWrapper {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .contactWrapper {
+    display: block;
+  }
+}

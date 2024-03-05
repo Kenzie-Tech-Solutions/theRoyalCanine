@@ -1,0 +1,9 @@
+.phoneWrapper {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .phoneWrapper {
+    display: none;
+  }
+}
