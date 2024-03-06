@@ -1,17 +1,10 @@
 .ComeVisitBoxWrapper {
-  /* background-image: url("../../assets/image4.jpeg"); */
   background-color: teal;
   background-size: cover;
   background-position: center;
   max-width: 400px;
   margin: 10px;
-
 }
-
-/* .boxContents {
-  background-color: rgba(0, 0, 0, 0.5);
-  height: 100%;
-} */
 
 .wordContent {
   padding: 20px;
@@ -64,4 +57,8 @@
 .clockIcon > p {
   margin: 0;
   color: black;
+}
+
+.socialsBlurb {
+  text-align: center;
 }

@@ -3,13 +3,12 @@ import "./NavBar.css";
 import { navLinksData } from "../../utils/navLinksData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faBars,
-  faEnvelope,
-  faPhoneAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useImgContext } from "../../providers/imgContext/imgContext";
-import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { NavBarSocials } from "../NavBarSocials/NavBarSocials";
+import { NavBarEmailDesktop } from "../NavBarEmailDesktop/NavBarEmailDesktop";
+import { NavBarPhoneDesktop } from "../NavBarPhoneDesktop/NavBarPhoneDesktop";
+import { NavBarContactsMobile } from "../NavBarContactsMobile/NavBarContactsMobile";
 
 library.add(faBars);
 
@@ -33,77 +32,10 @@ export const NavBar = ({ pageName }: NavBarProps) => {
               pageName !== "home" ? "nav-socials" : "nav-socials-home"
             }`}
           >
-            <div>
-              <p>
-                Follow Us:
-                <a href="https://www.facebook.com/profile.php?id=100092557327256">
-                  <FontAwesomeIcon
-                    icon={faFacebook}
-                    className={`${
-                      pageName !== "home"
-                        ? "nav-social-icon"
-                        : "nav-social-icon-home"
-                    }`}
-                  />
-                </a>
-                <a href="https://www.instagram.com/theroyalcanine53105">
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    className={`${
-                      pageName !== "home"
-                        ? "nav-social-icon"
-                        : "nav-social-icon-home"
-                    }`}
-                  />
-                </a>
-              </p>
-            </div>
-            <div>
-              <p>
-                Email Us:
-                <a href="mailto:theroyalcanine53105@gmail.com">
-                  <FontAwesomeIcon
-                    icon={faEnvelope}
-                    className={`${
-                      pageName !== "home"
-                        ? "nav-social-icon"
-                        : "nav-social-icon-home"
-                    }`}
-                  />
-                </a>{" "}
-                Call Us:
-                <a href="tel:1262.273.2961">
-                  <FontAwesomeIcon
-                    icon={faPhoneAlt}
-                    className={`${
-                      pageName !== "home"
-                        ? "nav-social-icon"
-                        : "nav-social-icon-home"
-                    }`}
-                  />
-                </a>
-              </p>
-            </div>
-            {/* <div>
-              <p>
-                Email Us:
-                <HashLink
-                  smooth
-                  to={`${
-                    pageName !== "home" ? "/#contactInfo" : "#contactInfo"
-                  }`}
-                >
-                  <FontAwesomeIcon
-                    icon={faEnvelope}
-                    className={`${
-                      pageName !== "home"
-                        ? "nav-social-icon"
-                        : "nav-social-icon-home"
-                    }`}
-                  />
-                </HashLink>
-              </p>
-            </div> */}
+            <NavBarSocials pageName={pageName} />
+            <NavBarEmailDesktop pageName={pageName} />
+            <NavBarPhoneDesktop pageName={pageName} />
+            <NavBarContactsMobile pageName={pageName} />
           </div>
           <nav className="nav-tag">
             <div className="hamburger-div">

@@ -21,22 +21,14 @@ export const ComeVisitBox = () => {
             </div>
             <p>8 am - 8 pm, 7 days a week</p>
           </div>
-          <div className={styles.contactInfo}>
+          <div className={`${styles.contactInfo} ${styles.socialsBlurb}`}>
             <p>
               Please follow us on social media for any closures or changes to
               our hours.
             </p>
           </div>
         </div>
-        {/* <div className={styles.imgContainer}>
-          <img src={img} alt="treat Container" />
-        </div> */}
       </div>
     </div>
   );
 };
-
-//     padding: 20px;
-// display: flex;
-// align-items: center;
-// font-size: 20px;

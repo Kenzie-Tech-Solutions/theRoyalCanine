@@ -1,0 +1,9 @@
+.emailWrapper {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .emailWrapper {
+    display: none;
+  }
+}

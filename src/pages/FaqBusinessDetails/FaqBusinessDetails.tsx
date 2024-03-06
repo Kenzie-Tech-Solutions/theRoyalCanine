@@ -15,13 +15,13 @@ export const FaqBusinessDetails = () => {
       <NavBar pageName="" />
       <div className={styles.heroSection}>
         <div className={styles.pageHeader}>
-          <h1>BUSINESS DETAILS & FAQs</h1>
+          <h1>About Us</h1>
         </div>
       </div>
 
       <div className={styles.businessDetails}>
         <div>
-          <h2>ABOUT US</h2>
+          {/* <h2>ABOUT US</h2> */}
           <div className={styles.aboutUsPar}>
             {aboutUs.map((par) => (
               <p key={par.p}>{par.p}</p>
