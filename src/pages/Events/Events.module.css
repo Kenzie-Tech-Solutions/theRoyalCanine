@@ -33,14 +33,20 @@
   border-radius: 5px;
   overflow: hidden;
   background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 460px;
 }
 
-.eventCard > p, .eventCard > h3 {
+.eventCard > div > p, .eventCard > div > h3 {
   text-align: center;
   color: black;
+  width: 80%;
+  margin: auto;
 }
 
-.eventCard > p {
+.eventCard > div > p {
   width: 80%;
   margin: auto;
 }

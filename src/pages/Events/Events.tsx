@@ -26,27 +26,29 @@ export const Events = () => {
                 className={styles.eventCard}
                 style={{ backgroundColor: event.color }}
               >
-                <h3>{event.title}</h3>
-                <p>{event.details}</p>
-                <div className={styles.flexRow}>
-                  <div>
-                    <FontAwesomeIcon icon={faLocationDot} />
+                <div>
+                  <h3>{event.title}</h3>
+                  <p>{event.details}</p>
+                  <div className={styles.flexRow}>
+                    <div>
+                      <FontAwesomeIcon icon={faLocationDot} />
+                    </div>
+                    <p>{event.location}</p>
                   </div>
-                  <p>Location</p>
-                </div>
-                <div className={styles.flexRow}>
-                  <div>
-                    <FontAwesomeIcon icon={faCalendarAlt} />
+                  <div className={styles.flexRow}>
+                    <div>
+                      <FontAwesomeIcon icon={faCalendarAlt} />
+                    </div>
+                    <p>{event.date}</p>
                   </div>
-                  <p>{event.date}</p>
-                </div>
-                <div className={styles.flexRow}>
-                  <div>
-                    <FontAwesomeIcon icon={faClock} />
+                  <div className={`${styles.flexRow} ${styles.lastDiv}`}>
+                    <div>
+                      <FontAwesomeIcon icon={faClock} />
+                    </div>
+                    <p>{event.time}</p>
                   </div>
-                  <p>Time of event</p>
                 </div>
-                <a href="/">Event Link </a>
+                <a href={event.link}>Event Link </a>
               </div>
             );
           })}
