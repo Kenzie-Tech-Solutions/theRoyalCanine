@@ -48,7 +48,7 @@ export const Events = () => {
                     <p>{event.time}</p>
                   </div>
                 </div>
-                <a href={event.link}>Event Link </a>
+                <a href={event.link} target="_blank">Event Link </a>
               </div>
             );
           })}
