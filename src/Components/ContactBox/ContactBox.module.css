@@ -2,9 +2,10 @@
   background-color: grey;
   margin: 10px;
   max-width: 400px;
+  min-width: 390px;
 }
 
-.contactPiece{
+.contactPiece {
   padding: 20px 27px;
   display: flex;
   flex-wrap: wrap;
@@ -32,6 +33,12 @@
 .contactPiece > div > hr {
   margin: 0;
   color: black;
+}
+
+@media (max-width: 422px) {
+ .contactPiece {
+  font-size: 16px;
+ }
 }
 
 @media screen and (max-width: 360px) {

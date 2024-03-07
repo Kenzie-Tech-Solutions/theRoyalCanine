@@ -2,6 +2,7 @@
     background-color: tan;
     margin: 10px;
     max-width: 400px;
+    min-width: 390px;
 }
 
 .newsLetterBoxWrapper > div > h2 {
@@ -38,6 +39,12 @@
   height: 25px;
   border-radius: 25px;
   border: turquoise;
+}
+
+@media (max-width: 422px) {
+  .newsLetterBoxWrapper > div > p {
+    min-width: 300px;
+  }
 }
 
 @media (max-width: 1260px) {
