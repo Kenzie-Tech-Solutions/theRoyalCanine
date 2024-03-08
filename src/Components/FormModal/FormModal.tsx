@@ -36,6 +36,7 @@ export const FormModal = () => {
                 <input type="email" placeholder="email"></input>
                 <input type="tel" placeholder="phone"></input>
                 <textarea placeholder="message" cols={10} rows={5}></textarea>
+                  <input type="hidden" id="captchaResponse" name="g-recaptcha-response" />
                 <input
                   className={styles.submitBtn}
                   type="submit"
