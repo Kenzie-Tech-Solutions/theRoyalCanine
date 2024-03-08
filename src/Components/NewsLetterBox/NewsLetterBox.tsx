@@ -27,6 +27,7 @@ export const NewsLetterBox = () => {
             type="submit"
             value="Subscribe"
           />
+          <input type="hidden" id="captchaResponse" name="g-recaptcha-response" />
         </form>
       </div>
     </div>
