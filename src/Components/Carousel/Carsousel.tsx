@@ -5,7 +5,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-import "./carousel.css";
+import "./Carousel.css";
 
 export const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
