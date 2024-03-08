@@ -7,9 +7,21 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/logo1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Royal Canine</title>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LehS5IpAAAAALnSUkx-T5s8nZ8TcnatYVZXn9Sr></script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="./src/main.tsx"></script>
+        <script>
+      grecaptcha.ready(function () {
+        grecaptcha
+          .execute('6LehS5IpAAAAALnSUkx-T5s8nZ8TcnatYVZXn9Sr', {
+            action: 'contact',
+          })
+          .then(function (token) {
+            document.getElementById('captchaResponse').value = token;
+          });
+      });
+    </script>
   </body>
 </html>
