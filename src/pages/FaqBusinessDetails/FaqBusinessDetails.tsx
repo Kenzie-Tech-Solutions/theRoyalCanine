@@ -33,6 +33,7 @@ export const FaqBusinessDetails = () => {
           <div>
             <h3>BUSINESS HOURS</h3>
             <p>8:00 AM - 8:00 PM / 7 days a week</p>
+            <p>Summer hours beginning in April - Open until 9 PM</p>
             <p>
               Please follow us on social media for any closures or changes to
               our hours.
