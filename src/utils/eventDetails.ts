@@ -15,7 +15,7 @@ export const eventDetails = [
      details:
        "Canine 'Cocktail', Mini Photo Session, Dog Treat Ball Pit Game",
      color: "teal",
-     location: " 228 E Main St. Waterford, WI 53185",
+     location: "228 E Main St. Waterford, WI 53185",
     
      time: "6:30 - 8:30 pm",
      link: "TBD"
@@ -28,6 +28,6 @@ export const eventDetails = [
     color: "tan",
     location: "Downtown Burlington",
     time: "4pm - 8pm",
-    link: https://www.facebook.com/events/854310439876999/
+    link: "https://www.facebook.com/events/854310439876999/"
    }
 ];
