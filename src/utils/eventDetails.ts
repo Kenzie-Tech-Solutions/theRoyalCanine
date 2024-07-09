@@ -13,7 +13,7 @@ export const eventDetails = [
      date: "July 24th",
      title: "Doggie Day @ Waterford Stillhouse",
      details:
-       "Canine “Cocktail”, Mini Photo Session, Dog Treat Ball Pit Game,
+       "Canine 'Cocktail', Mini Photo Session, Dog Treat Ball Pit Game",
      color: "teal",
      location: " 228 E Main St. Waterford, WI 53185",
     
@@ -24,7 +24,7 @@ export const eventDetails = [
     date: "July 26th",
     title: "Christmas in July Ladies’ Night",
     details:
-      "It's summer in Burlington! So grab your friends and have fun shopping at participating locations as we put on "Christmas in July". Look out for specials events and discounts while you shop, eat, and drink local at your favorite locations!",
+      "It's summer in Burlington! So grab your friends and have fun shopping at participating locations as we put on 'Christmas in July'. Look out for specials events and discounts while you shop, eat, and drink local at your favorite locations!",
     color: "tan",
     location: "Downtown Burlington",
     time: "4pm - 8pm",
