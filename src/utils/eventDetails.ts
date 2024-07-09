@@ -1,24 +1,33 @@
 export const eventDetails = [
   {
-    date: "Saturday, 6/1/24",
-    title: "Loop Day",
+    date: "July 19th and 20th",
+    title: "Experience Burlington Days & Maxwell Street Market",
     details:
-      "Come celebrate the start of summer on the quirky little one-way street that leads to Historic Downtown Burlington! The Loop (the 100 block of E Chestnut St) will be closed to traffic for what's guaranteed to be a fun-filled day of live music, family games and activities, business tours, and all-day food, beverages and craft beer. The Royal Canine will be hosting an “adopt a plushie” activity. Kids can choose from a variety of stuffed “pets” and collars and will be able to decorate their carriers. They will also receive an “adoption certificate” and pet care checklist / chore chart.",
+      "Join us downtown for Burlington’s BIGGEST summer event! The streets will be closed off to make room for live music, food, drinks, shopping, activities and fun galore! Come check out all the GREAT things Burlington has to offer! More information can be found on Experience Burlington’s website/social media.",
     color: "tan",
-    location: "The Loop (the 100 block of E Chestnut St)",
+    location: "Downtown Burlington",
     time: "10am - 10pm",
-    link: "https://www.facebook.com/events/813345654183265"
-  }
-  // },
-  // {
-  //   date: "Friday, 5/17/24",
-  //   title: "Kickoff to Summer Block Partys",
-  //   details:
-  //     "The N. Pine businesses are shutting down the road for a block party! There will be music, food, activities, and fun for all ages (and breeds)!",
-  //   color: "teal",
-  //   location: " 500 block of N. Pine St.",
+    link: "https://www.facebook.com/events/1344977809522884"
+   },
+   {
+     date: "July 24th",
+     title: "Doggie Day @ Waterford Stillhouse",
+     details:
+       "Canine “Cocktail”, Mini Photo Session, Dog Treat Ball Pit Game,
+     color: "teal",
+     location: " 228 E Main St. Waterford, WI 53185",
     
-  //   time: "5-10 pm",
-  //   link: "TBD"
-  // }
+     time: "6:30 - 8:30 pm",
+     link: "TBD"
+   },
+{
+    date: "July 26th",
+    title: "Christmas in July Ladies’ Night",
+    details:
+      "It's summer in Burlington! So grab your friends and have fun shopping at participating locations as we put on "Christmas in July". Look out for specials events and discounts while you shop, eat, and drink local at your favorite locations!",
+    color: "tan",
+    location: "Downtown Burlington",
+    time: "4pm - 8pm",
+    link: https://www.facebook.com/events/854310439876999/
+   }
 ];
