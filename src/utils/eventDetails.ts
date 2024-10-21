@@ -1,33 +1,34 @@
 export const eventDetails = [
   {
-    date: "July 19th and 20th",
-    title: "Experience Burlington Days & Maxwell Street Market",
+    date: "Every Wednesday",
+    title: "Reactive Dog” Owner Wash Wednesdays",
     details:
-      "Join us downtown for Burlington’s BIGGEST summer event! The streets will be closed off to make room for live music, food, drinks, shopping, activities and fun galore! Come check out all the GREAT things Burlington has to offer! More information can be found on Experience Burlington’s website/social media.",
+      "Appointment Required – Visit the event for the link to book!",
     color: "tan",
-    location: "Downtown Burlington",
-    time: "10am - 10pm",
-    link: "https://www.facebook.com/events/1344977809522884"
+    location: "The Royal Canine",
+    time: "10:30am - 3pm",
+    link: "https://www.facebook.com/events/513468731475712/513468744809044?ref=newsfeed"
    },
    {
      date: "July 24th",
-     title: "Doggie Day @ Waterford Stillhouse",
+     title: "Mini-Groom” by Shampooches",
      details:
-       "Canine 'Cocktail', Mini Photo Session, Dog Treat Ball Pit Game",
+       "Visit the event for details!",
      color: "teal",
-     location: "228 E Main St. Waterford, WI 53185",
+     location: "The Royal Canine",
     
-     time: "6:30 - 8:30 pm",
-     link: "TBD"
-   },
-{
-    date: "July 26th",
-    title: "Christmas in July Ladies’ Night",
-    details:
-      "It's summer in Burlington! So grab your friends and have fun shopping at participating locations as we put on 'Christmas in July'. Look out for specials events and discounts while you shop, eat, and drink local at your favorite locations!",
-    color: "tan",
-    location: "Downtown Burlington",
-    time: "4pm - 8pm",
-    link: "https://www.facebook.com/events/854310439876999/"
+     time: "12pm - 3pm",
+     link: "https://www.facebook.com/events/1173710287028616/?ref=newsfeed"
    }
+  // ,
+// {
+//     date: "July 26th",
+//     title: "Christmas in July Ladies’ Night",
+//     details:
+//       "It's summer in Burlington! So grab your friends and have fun shopping at participating locations as we put on 'Christmas in July'. Look out for specials events and discounts while you shop, eat, and drink local at your favorite locations!",
+//     color: "tan",
+//     location: "Downtown Burlington",
+//     time: "4pm - 8pm",
+//     link: "https://www.facebook.com/events/854310439876999/"
+//    }
 ];
