@@ -36,8 +36,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* height: 460px; */
-  height: 750px;
+  height: 460px;
+/*   height: 750px; */
 }
 
 .eventCard > div > p, .eventCard > div > h3 {
